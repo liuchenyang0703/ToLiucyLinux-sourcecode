@@ -1,0 +1,14 @@
+export const data = JSON.parse("{\"key\":\"v-4c63d4ba\",\"path\":\"/cloud/Linux/%E3%80%90Linux%E3%80%91%E4%B9%8B%E3%80%90%E7%A3%81%E7%9B%98%E3%80%91%E7%9B%B8%E5%85%B3%E7%9A%84%E5%91%BD%E4%BB%A4%E5%8F%8A%E8%A7%A3%E6%9E%90_df%E3%80%81du%E3%80%81iostat%E3%80%81iotop_.html\",\"title\":\"总结\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"[toc] 一、df – 显示磁盘空间使用情况 df命令来自于英文词组”Disk Free“的缩写，其功能是用于显示系统上磁盘空间的使用量情况。df命令显示的磁盘使用量情况含可用、已有及使用率等信息，默认单位为Kb，建议使用-h参数进行单位换算。 df命令可以查看磁盘使用情况和挂载信息 语法格式*常用参数* 参数 解析 ---- -a\\t显示所有系统文件...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"http://liuchenyang.top/cloud/Linux/%E3%80%90Linux%E3%80%91%E4%B9%8B%E3%80%90%E7%A3%81%E7%9B%98%E3%80%91%E7%9B%B8%E5%85%B3%E7%9A%84%E5%91%BD%E4%BB%A4%E5%8F%8A%E8%A7%A3%E6%9E%90_df%E3%80%81du%E3%80%81iostat%E3%80%81iotop_.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"ToLiucyLinux\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"总结\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"[toc] 一、df – 显示磁盘空间使用情况 df命令来自于英文词组”Disk Free“的缩写，其功能是用于显示系统上磁盘空间的使用量情况。df命令显示的磁盘使用量情况含可用、已有及使用率等信息，默认单位为Kb，建议使用-h参数进行单位换算。 df命令可以查看磁盘使用情况和挂载信息 语法格式*常用参数* 参数 解析 ---- -a\\t显示所有系统文件...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"article:author\",\"content\":\"Liucy\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"总结\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":null,\\\"author\\\":[{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"Liucy\\\",\\\"url\\\":\\\"http://liuchenyang.top\\\"}]}\"]]},\"headers\":[{\"level\":2,\"title\":\"一、df – 显示磁盘空间使用情况\",\"slug\":\"一、df-–-显示磁盘空间使用情况\",\"link\":\"#一、df-–-显示磁盘空间使用情况\",\"children\":[]},{\"level\":2,\"title\":\"二、du – 查看文件或目录的大小\",\"slug\":\"二、du-–-查看文件或目录的大小\",\"link\":\"#二、du-–-查看文件或目录的大小\",\"children\":[]},{\"level\":2,\"title\":\"三、iostat – 监视系统输入输出设备和CPU的使用情况\",\"slug\":\"三、iostat-–-监视系统输入输出设备和cpu的使用情况\",\"link\":\"#三、iostat-–-监视系统输入输出设备和cpu的使用情况\",\"children\":[]},{\"level\":2,\"title\":\"四、iotop – 监视磁盘I/O状态\",\"slug\":\"四、iotop-–-监视磁盘i-o状态\",\"link\":\"#四、iotop-–-监视磁盘i-o状态\",\"children\":[]},{\"level\":2,\"title\":\"相关文章\",\"slug\":\"相关文章\",\"link\":\"#相关文章\",\"children\":[]}],\"readingTime\":{\"minutes\":6.9,\"words\":2069},\"filePathRelative\":\"cloud/Linux/【Linux】之【磁盘】相关的命令及解析[df、du、iostat、iotop].md\",\"copyright\":{\"author\":\"LiucyLinux(LiucyLinux.cn)\",\"license\":\"MIT\"},\"autoDesc\":true}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

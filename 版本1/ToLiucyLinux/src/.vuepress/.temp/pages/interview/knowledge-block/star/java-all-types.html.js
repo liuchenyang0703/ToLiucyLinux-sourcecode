@@ -1,0 +1,14 @@
+export const data = JSON.parse("{\"key\":\"v-00051d72\",\"path\":\"/interview/knowledge-block/star/java-all-types.html\",\"title\":\"介绍一下Java的数据类型\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"介绍一下Java的数据类型\",\"icon\":\"circle-info\",\"order\":18,\"pageview\":false,\"date\":\"2024-07-09T15:55:24.000Z\",\"comment\":false,\"breadcrumb\":false,\"description\":\"Java的数据类型分为基本数据类型和引用数据类型。 基本数据类型包括 byte、char、boolean、short、int、long、float、double。 其中整数的默认类型为int类型，浮点数的默认类型为double。 1.整数类型 byte：-128~127 short：-32768~32767 int：-2^31~2^31-1 long：...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"http://liuchenyang.top/interview/knowledge-block/star/java-all-types.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"ToLiucyLinux\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"介绍一下Java的数据类型\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"Java的数据类型分为基本数据类型和引用数据类型。 基本数据类型包括 byte、char、boolean、short、int、long、float、double。 其中整数的默认类型为int类型，浮点数的默认类型为double。 1.整数类型 byte：-128~127 short：-32768~32767 int：-2^31~2^31-1 long：...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"article:author\",\"content\":\"Liucy\"}],[\"meta\",{\"property\":\"article:published_time\",\"content\":\"2024-07-09T15:55:24.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"介绍一下Java的数据类型\\\",\\\"image\\\":[\\\"\\\"],\\\"datePublished\\\":\\\"2024-07-09T15:55:24.000Z\\\",\\\"dateModified\\\":null,\\\"author\\\":[{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"Liucy\\\",\\\"url\\\":\\\"http://liuchenyang.top\\\"}]}\"]]},\"headers\":[{\"level\":2,\"title\":\"1.整数类型\",\"slug\":\"_1-整数类型\",\"link\":\"#_1-整数类型\",\"children\":[]},{\"level\":2,\"title\":\"2.浮点类型\",\"slug\":\"_2-浮点类型\",\"link\":\"#_2-浮点类型\",\"children\":[]},{\"level\":2,\"title\":\"3.字符类型：仅有一个成员，即char，用于表示单个字符。\",\"slug\":\"_3-字符类型-仅有一个成员-即char-用于表示单个字符。\",\"link\":\"#_3-字符类型-仅有一个成员-即char-用于表示单个字符。\",\"children\":[]},{\"level\":2,\"title\":\"4.布尔类型：只有boolean一种，用于表示真伪状态。\",\"slug\":\"_4-布尔类型-只有boolean一种-用于表示真伪状态。\",\"link\":\"#_4-布尔类型-只有boolean一种-用于表示真伪状态。\",\"children\":[]}],\"readingTime\":{\"minutes\":1.03,\"words\":309},\"filePathRelative\":\"interview/knowledge-block/star/java-all-types.md\",\"localizedDate\":\"2024年7月9日\",\"copyright\":{\"author\":\"LiucyLinux(LiucyLinux.cn)\",\"license\":\"MIT\"},\"autoDesc\":true}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

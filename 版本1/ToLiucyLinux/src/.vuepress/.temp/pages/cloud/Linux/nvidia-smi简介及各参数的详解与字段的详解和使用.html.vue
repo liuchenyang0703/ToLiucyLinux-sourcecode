@@ -1,0 +1,234 @@
+<template><div><figure><img src="https://img-blog.csdnimg.cn/4eb92294481d4014ac475041c61f2af8.png#pic_center" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<blockquote>
+<p>👨‍🎓<strong>博主简介</strong></p>
+<p>  🏅<a href="https://blog.csdn.net/liu_chen_yang?type=blog" target="_blank" rel="noopener noreferrer">云计算领域优质创作者<ExternalLinkIcon/></a><br>
+  🏅<a href="https://bbs.huaweicloud.com/community/myblog" target="_blank" rel="noopener noreferrer">华为云开发者社区专家博主<ExternalLinkIcon/></a><br>
+  🏅<a href="https://developer.aliyun.com/my?spm=a2c6h.13148508.setting.3.21fc4f0eCmz1v3#/article?_k=zooqoz" target="_blank" rel="noopener noreferrer">阿里云开发者社区专家博主<ExternalLinkIcon/></a><br>
+💊<strong>交流社区：</strong><a href="https://bbs.csdn.net/forums/lcy" target="_blank" rel="noopener noreferrer">运维交流社区<ExternalLinkIcon/></a> 欢迎大家的加入！<br>
+🐋 希望大家多多支持，我们一起进步！😄<br>
+🎉如果文章对你有帮助的话，欢迎 点赞 👍🏻 评论 💬 收藏 ⭐️ 加关注+💗</p>
+</blockquote>
+<hr>
+<p>@<a href="nvidia-smi%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95">toc</a></p>
+<h1 id="nvidia-smi简介" tabindex="-1"><a class="header-anchor" href="#nvidia-smi简介" aria-hidden="true">#</a> nvidia-smi简介</h1>
+<h2 id="_1、什么是nvidia-smi" tabindex="-1"><a class="header-anchor" href="#_1、什么是nvidia-smi" aria-hidden="true">#</a> 1、什么是nvidia-smi</h2>
+<blockquote>
+<p>nvidia-smi是nvidia 的系统管理界面 ，其中smi是 <strong>System management interface</strong> 的缩写，它可以收集各种级别的信息，查看显存使用情况，显卡的温度... ...。此外, 可以启用和禁用 GPU 配置选项 (如 ECC 内存功能)。</p>
+</blockquote>
+<h2 id="_2、介绍nvidia-smi" tabindex="-1"><a class="header-anchor" href="#_2、介绍nvidia-smi" aria-hidden="true">#</a> 2、介绍nvidia-smi</h2>
+<blockquote>
+<p>nvidia-sim简称NVSMI，提供监控GPU使用情况和更改GPU状态的功能，是一个跨平台工具，支持所有标准的NVIDIA驱动程序支持的Linux和WindowsServer 2008 R2 开始的64位系统。这个工具是N卡驱动附带的，只要使用nvidia显卡，完成安装驱动就会有nvidia-smi命令；</p>
+</blockquote>
+<h1 id="nvidia-smi命令详解" tabindex="-1"><a class="header-anchor" href="#nvidia-smi命令详解" aria-hidden="true">#</a> nvidia-smi命令详解</h1>
+<h2 id="表格参数详解" tabindex="-1"><a class="header-anchor" href="#表格参数详解" aria-hidden="true">#</a> 表格参数详解</h2>
+<figure><img src="https://img-blog.csdnimg.cn/4ce7b01bcdbf4ddea47efcab5dc2fb10.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>+-----------------------------------------------------------------------------+
+<span class="token operator">|</span> NVIDIA-SMI <span class="token number">515.57</span>       Driver Version: <span class="token number">515.57</span>       CUDA Version: <span class="token number">11.7</span>     <span class="token operator">|</span>
+<span class="token operator">|</span>-------------------------------+----------------------+----------------------+
+<span class="token operator">|</span> GPU  Name        Persistence-M<span class="token operator">|</span> Bus-Id        Disp.A <span class="token operator">|</span> Volatile Uncorr. ECC <span class="token operator">|</span>
+<span class="token operator">|</span> Fan  Temp  Perf  Pwr:Usage/Cap<span class="token operator">|</span>         Memory-Usage <span class="token operator">|</span> GPU-Util  Compute M. <span class="token operator">|</span>
+<span class="token operator">|</span>                               <span class="token operator">|</span>                      <span class="token operator">|</span>               MIG M. <span class="token operator">|</span>
+<span class="token operator">|</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">=</span><span class="token operator">+=</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">=</span><span class="token operator">+=</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">=</span><span class="token operator">|</span>
+<span class="token operator">|</span>   <span class="token number">0</span>  NVIDIA GeForce <span class="token punctuation">..</span>.  Off  <span class="token operator">|</span> 00000000:65:00.0 Off <span class="token operator">|</span>                  N/A <span class="token operator">|</span>
+<span class="token operator">|</span> <span class="token number">30</span>%   22C    P8     3W / 350W <span class="token operator">|</span>   9815MiB / 12288MiB <span class="token operator">|</span>      <span class="token number">0</span>%      Default <span class="token operator">|</span>
+<span class="token operator">|</span>                               <span class="token operator">|</span>                      <span class="token operator">|</span>                  N/A <span class="token operator">|</span>
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+<span class="token operator">|</span> Processes:                                                                  <span class="token operator">|</span>
+<span class="token operator">|</span>  GPU   GI   CI        PID   Type   Process name                  GPU Memory <span class="token operator">|</span>
+<span class="token operator">|</span>        ID   ID                                                   Usage      <span class="token operator">|</span>
+<span class="token operator">|</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">=</span><span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">0</span>   N/A  N/A     <span class="token number">37593</span>      C   <span class="token function">java</span>                             2869MiB <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">0</span>   N/A  N/A     <span class="token number">48477</span>      C   python3                          2779MiB <span class="token operator">|</span>
++-----------------------------------------------------------------------------+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p> <br>
+ </p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code><span class="token operator">|</span> NVIDIA-SMI <span class="token number">515.57</span>       Driver Version: <span class="token number">515.57</span>       CUDA Version: <span class="token number">11.7</span>     <span class="token operator">|</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><blockquote>
+<p>NVIDIA-SMI 515.57   #GRID版本<br>
+Driver Version: 515.57  #驱动版本<br>
+CUDA Version: 11.7   #CUDA最高支持的版本</p>
+</blockquote>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code><span class="token operator">|</span> GPU  Name        Persistence-M<span class="token operator">|</span> Bus-Id        Disp.A <span class="token operator">|</span> Volatile Uncorr. ECC <span class="token operator">|</span>
+<span class="token operator">|</span> Fan  Temp  Perf  Pwr:Usage/Cap<span class="token operator">|</span>         Memory-Usage <span class="token operator">|</span> GPU-Util  Compute M. <span class="token operator">|</span>
+<span class="token operator">|</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">=</span><span class="token operator">+=</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">=</span><span class="token operator">+=</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">=</span><span class="token operator">|</span>
+<span class="token operator">|</span>   <span class="token number">0</span>  NVIDIA GeForce <span class="token punctuation">..</span>.  Off  <span class="token operator">|</span> 00000000:65:00.0 Off <span class="token operator">|</span>                  N/A <span class="token operator">|</span>
+<span class="token operator">|</span> <span class="token number">30</span>%   22C    P8     3W / 350W <span class="token operator">|</span>   9815MiB / 12288MiB <span class="token operator">|</span>      <span class="token number">0</span>%      Default <span class="token operator">|</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><blockquote>
+<p><code v-pre>|===============================+======================+======================|</code><br>
+为分隔符：上下两行是对应关系，上1对下1，上2对下2<br>
+ </p>
+<ul>
+<li>GPU         #本机中的GPU编号,（多块显卡的时候，编号从0开始）图上GPU的编号为：0。</li>
+<li>Fan         #风扇转速（0%-100%）；N/A表示没有风扇；err表示风扇可能损坏；图上表示风扇转速为：30%。</li>
+<li>Name        #GPU类型（显卡型号），图上GPU的类型为：NVIDIA GeForce RTX 3080 Ti。</li>
+<li>Temp         #GPU的温度（GPU温度过高会导致GPU的频率下降），单位摄氏度C；图上温度为：22C。</li>
+<li>Perf         #GPU的性能状态，从P0（最大性能）到P12（最小性能），图上是：P8</li>
+<li>Persistence-M    #持续模式的状态，持续模式虽然耗能大，但是在新的GPU应用启动时花费的时间更少，图上显示的是：off</li>
+<li>Pwr:Usage/Cap    #能耗表示，Usage：用了多少，Cap总共多少；图上Usage显示：3W，Cap显示：350W。</li>
+<li>Bus-Id        #GPU总线相关显示，domain：bus：device.function</li>
+<li>Disp.A        #Display Active ，表示GPU的显示是否初始化</li>
+<li>Memory-Usage    #内存使用率</li>
+<li>Volatile GPU-Util    #GPU使用率</li>
+<li>Uncorr. ECC      #关于ECC的东西，是否开启错误检查和纠正技术，0/disabled,1/enabled</li>
+<li>Compute M      #计算模式，0/DEFAULT,1/EXCLUSIVE_PROCESS,2/PROHIBITED</li>
+</ul>
+</blockquote>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code><span class="token operator">|</span> Processes:                                                       GPU Memory <span class="token operator">|</span>
+<span class="token operator">|</span>  GPU       PID   Type   Process name                             Usage      <span class="token operator">|</span>
+<span class="token operator">|</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">=</span><span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">0</span>       <span class="token number">762</span>      C   <span class="token function">java</span>                                        1995MiB <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">1</span>       <span class="token number">354</span>      C   python3                                     2101MiB <span class="token operator">|</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><blockquote>
+<p><code v-pre>|=============================================================================|</code><br>
+为分隔符：分隔符上面对应下面的所有<br>
+ </p>
+<ul>
+<li>Processes       #显示每个进程占用的显存使用率、进程号、占用的哪个GPU。<br>
+ </li>
+<li>GPU          #当前进程占用的那块显卡。</li>
+<li>PID          #当前进程的PID，可使用ps -ef | grep PID 查看详细命令。</li>
+<li>Type          #当前进程的运行状态。</li>
+<li>Process name     #当前进程的运行主命令。</li>
+<li>GPU Memory Usage   #该进程占用的显存。</li>
+</ul>
+</blockquote>
+<h2 id="nvidia-smi-help命令详解" tabindex="-1"><a class="header-anchor" href="#nvidia-smi-help命令详解" aria-hidden="true">#</a> nvidia-smi --help命令详解</h2>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>列表选项：
+<span class="token parameter variable">-L</span>			<span class="token comment">#列出所有可用的 NVIDIA 设备</span>
+<span class="token parameter variable">-B</span>			<span class="token comment">#列出所有被拉入黑名单的NVIDIA设备</span>
+
+查询选项：
+<span class="token parameter variable">-q</span>			<span class="token comment">#查询显示GPUnvidia的相关信息</span>
+
+配合选项：
+-u、 <span class="token parameter variable">--unit</span> <span class="token comment">#显示单位属性，而不是GPU属性。</span>
+-i、 <span class="token parameter variable">--id</span>	<span class="token comment">#以特定GPU或单元为目标。可指定显卡编号</span>
+<span class="token parameter variable">--format</span>	<span class="token comment">#指定输出的格式csv</span>
+<span class="token parameter variable">--filename</span>	<span class="token comment">#输入csv文件，--filename=后跟自定义csv文件名；</span>
+--query-gpu	<span class="token comment">#指定输出的字段，后可跟timestamp时间、name，</span>
+
+-x、 <span class="token parameter variable">--xml</span>	<span class="token comment">#格式生成xml输出。</span>
+
+<span class="token parameter variable">-l</span>			<span class="token comment">#持续刷新显存状态</span>
+<span class="token parameter variable">-lms</span>		<span class="token comment">#循环动态显示;每毫秒</span>
+
+<span class="token parameter variable">--dtd</span>		<span class="token comment">#显示xml输出时，嵌入dtd。</span>
+
+-d、 <span class="token parameter variable">--display</span>	<span class="token comment">#仅显示选定信息：MEMORY，</span>
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="列出所有可用的-nvidia-设备" tabindex="-1"><a class="header-anchor" href="#列出所有可用的-nvidia-设备" aria-hidden="true">#</a> 列出所有可用的 NVIDIA 设备</h3>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>nvidia-smi <span class="token parameter variable">-L</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><figure><img src="https://img-blog.csdnimg.cn/886c1a543b964bcca6e1d6ec9ada3853.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<blockquote>
+<p>作用：可用作统计服务器中的显卡数量。</p>
+</blockquote>
+<h3 id="列出所有被拉入黑名单的nvidia设备" tabindex="-1"><a class="header-anchor" href="#列出所有被拉入黑名单的nvidia设备" aria-hidden="true">#</a> 列出所有被拉入黑名单的NVIDIA设备</h3>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>nvidia-smi <span class="token parameter variable">-B</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><figure><img src="https://img-blog.csdnimg.cn/a6b00d8f7bf34e62a9cbf6dc7aee1aaf.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<blockquote>
+<p><code v-pre>No blacklisted devices found.</code> 未找到列入黑名单的设备。</p>
+</blockquote>
+<h3 id="查询nvidiagpu的相关信息" tabindex="-1"><a class="header-anchor" href="#查询nvidiagpu的相关信息" aria-hidden="true">#</a> 查询nvidiaGPU的相关信息</h3>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>nvidia-smi <span class="token parameter variable">-q</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><figure><img src="https://img-blog.csdnimg.cn/b8bf784410d446218a994be47e03eaa7.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3 id="持续刷新显存状态" tabindex="-1"><a class="header-anchor" href="#持续刷新显存状态" aria-hidden="true">#</a> 持续刷新显存状态</h3>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code><span class="token comment">#每两秒刷新一次显存状态</span>
+nvidia-smi <span class="token parameter variable">-l</span> <span class="token number">2</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><blockquote>
+<p>也可用<code v-pre>watch -n 1 nvidia-smi   #1秒刷新一次显存状态</code></p>
+</blockquote>
+<h2 id="查询所有的csv文件-query-gpu可使用的字段及字段说明、实例" tabindex="-1"><a class="header-anchor" href="#查询所有的csv文件-query-gpu可使用的字段及字段说明、实例" aria-hidden="true">#</a> 查询所有的csv文件<code v-pre>--query-gpu</code>可使用的字段及字段说明、实例</h2>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code><span class="token comment">#查询可使用的所有字段</span>
+nvidia-smi --help-query-gpu
+
+
+timestamp			<span class="token comment">#查询位置的时间戳，格式为“YYYY/MM/DD HH:MM:SS.msec”	；	nvidia-smi --format=csv,noheader --query-gpu=timestamp</span>
+memory.total		<span class="token comment">#查询已安装的GPU显存总数。								nvidia-smi --format=csv,noheader --query-gpu=memory.total</span>
+memory.used			<span class="token comment">#查询已安装的GPU显存使用率。							nvidia-smi --format=csv,noheader --query-gpu=memory.used</span>
+memory.free			<span class="token comment">#查询已安装的GPU剩余显存。								nvidia-smi --format=csv,noheader --query-gpu=memory.free</span>
+driver_version		<span class="token comment">#查询已安装的NVIDIA显示器驱动程序的版本；					nvidia-smi --format=csv,noheader --query-gpu=driver_version</span>
+index				<span class="token comment">#输出显卡的编号：										nvidia-smi --format=csv,noheader --query-gpu=index</span>
+pstate				<span class="token comment">#GPU的当前性能状态。状态范围从P0(最大性能)到P12(最小性能)	nvidia-smi --format=csv,noheader --query-gpu=pstate</span>
+power.draw			<span class="token comment">#显存功耗，对应Pwr：Usage使用：							nvidia-smi --format=csv,noheader --query-gpu=power.draw</span>
+temperature.gpu		<span class="token comment">#输出GPU温度，核心GPU温度。							nvidia-smi --format=csv,noheader --query-gpu=index,temperature.gpu | sed -e "s#, #卡温度为：#g" -e 's#$#°C#g'</span>
+fan.speed			<span class="token comment">#输出GPU风扇转速。									nvidia-smi --format=csv,noheader --query-gpu=index,fan.speed | sed "s#, #卡风扇转速为：#g"</span>
+utilization.gpu		<span class="token comment">#输出GPU的使用率：									nvidia-smi --format=csv,noheader --query-gpu=utilization.gpu</span>
+utilization.memory  <span class="token comment">#输出显存的使用率：									nvidia-smi --format=csv,noheader --query-gpu=utilization.memory</span>
+count				<span class="token comment">#查询位置的时间戳，格式为“YYYY/MM/DD HH:MM:SS.msec”；	nvidia-smi --format=csv,noheader --query-gpu=count</span>
+<span class="token string">"name"</span> or <span class="token string">"gpu_name"</span>		<span class="token comment">#查询显卡型号，适用于所有产品；												nvidia-smi --format=csv,noheader --query-gpu=name,gpu_name</span>
+<span class="token string">"serial"</span> or <span class="token string">"gpu_serial"</span>	<span class="token comment">#该编号与每个板上实际打印的序列号相匹配。它是全局唯一的不可变字母数字值。			nvidia-smi --format=csv,noheader --query-gpu=serial,gpu_serial</span>
+<span class="token string">"uuid"</span> or <span class="token string">"gpu_uuid"</span>		<span class="token comment">#此值是GPU的全局唯一不可变字母数字标识符。它与电路板上的任何物理标签都不对应。		nvidia-smi --format=csv,noheader --query-gpu=uuid,gpu_uuid</span>
+<span class="token string">"pci.bus_id"</span>or<span class="token string">"gpu_bus_id"</span>	<span class="token comment">#PCI总线id为“域：总线：设备.功能”，十六进制。									nvidia-smi --format=csv,noheader --query-gpu=pci.bus_id,gpu_bus_id</span>
+pci.domain			<span class="token comment">#PCI域名，十六进制。									nvidia-smi --format=csv,noheader --query-gpu=pci.domain</span>
+pci.bus				<span class="token comment">#PCI总线编号，十六进制。								nvidia-smi --format=csv,noheader --query-gpu=pci.bus</span>
+pci.device			<span class="token comment">#PCI设备编号，十六进制。								nvidia-smi --format=csv,noheader --query-gpu=pci.device</span>
+pci.device_id		<span class="token comment">#PCI供应商设备id，十六进制								nvidia-smi --format=csv,noheader --query-gpu=pci.device_id</span>
+pci.sub_device_id	<span class="token comment">#PCI子系统id，十六进制									nvidia-smi --format=csv,noheader --query-gpu=pci.sub_device_id</span>
+vbios_version		<span class="token comment">#GPU板的BIOS。										nvidia-smi --format=csv,noheader --query-gpu=vbios_version</span>
+inforom.oem			<span class="token comment">#OEM配置数据的版本。									nvidia-smi --format=csv,noheader --query-gpu=inforom.oem</span>
+inforom.ecc			<span class="token comment">#ECC记录数据的版本。									nvidia-smi --format=csv,noheader --query-gpu=inforom.ecc</span>
+driver_model.current		<span class="token comment">#当前使用的驱动程序模型。在Linux上始终为“N/A”		nvidia-smi --format=csv,noheader --query-gpu=driver_model.current</span>
+accounting.buffer_size		<span class="token comment">#循环缓冲区的大小，该缓冲区包含可查询会计统计信息的进程列表。这是在有关最旧进程的信息被有关新进程的信息覆盖之前，将为其存储记帐信息的最大进程数		nvidia-smi --format=csv --query-gpu=accounting.buffer_size</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="持续监控nvidia-smi结果写入自定义csv文件-并指定写入文件的监控字段" tabindex="-1"><a class="header-anchor" href="#持续监控nvidia-smi结果写入自定义csv文件-并指定写入文件的监控字段" aria-hidden="true">#</a> 持续监控nvidia-smi结果写入自定义csv文件，并指定写入文件的监控字段</h3>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>nvidia-smi <span class="token parameter variable">-l</span> <span class="token number">1</span> <span class="token parameter variable">--format</span><span class="token operator">=</span>csv <span class="token parameter variable">--filename</span><span class="token operator">=</span>report.csv --query-gpu<span class="token operator">=</span>timestamp,name,index,utilization.gpu,memory.total,memory.used,memory.free,power.draw
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><blockquote>
+<p><code v-pre>-l</code>      #隔多久记录一次，我们写的是每秒记录一次。<br>
+<code v-pre>--format</code>   #结果记录文件格式是csv类型。（csv）<br>
+<code v-pre>--filename</code>  #结果记录文件的名字。（report.csv）<br>
+<code v-pre>--query-gpu</code>  #都记录哪些数据到csv文件中；<br>
+  <code v-pre>timestamp</code>     #输出每块显卡的时间戳：<code v-pre>nvidia-smi --format=csv --query-gpu=timestamp</code><br>
+  <code v-pre>name</code>        #输出显卡的型号（名称）：<code v-pre>nvidia-smi --format=csv --query-gpu=name</code><br>
+  <code v-pre>index</code>       #输出显卡的编号：<code v-pre>nvidia-smi --format=csv --query-gpu=index</code><br>
+  <code v-pre>utilization.gpu</code>  #输出GPU的使用率：<code v-pre>nvidia-smi --format=csv --query-gpu=utilization.gpu</code><br>
+  <code v-pre>memory.total</code>    #显存大小，输出总显存值：<code v-pre>nvidia-smi --format=csv --query-gpu=memory.total</code><br>
+  <code v-pre>memory.used</code>     #显存大小，输出使用了多少显存：<code v-pre>nvidia-smi --format=csv --query-gpu=memory.used</code><br>
+  <code v-pre>memory.free</code>     #显存大小，输出剩余多少显存：<code v-pre>nvidia-smi --format=csv --query-gpu=memory.free</code>；不太准，建议使用：总显存-使用显存来计算；<br>
+  <code v-pre>power.draw</code>     #显存功耗，对应Pwr：Usage使用：<code v-pre>nvidia-smi --format=csv --query-gpu=power.draw</code></p>
+</blockquote>
+<h3 id="持续监控nvidia-smi结果为csv类型并双重重定向到csv文件中-并指定写入文件的监控字段" tabindex="-1"><a class="header-anchor" href="#持续监控nvidia-smi结果为csv类型并双重重定向到csv文件中-并指定写入文件的监控字段" aria-hidden="true">#</a> 持续监控nvidia-smi结果为csv类型并双重重定向到csv文件中，并指定写入文件的监控字段</h3>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code> nvidia-smi <span class="token parameter variable">-lms</span> --query-gpu<span class="token operator">=</span>timestamp,pstate,temperature.gpu,utilization.gpu,utilization.memory,memory.total,memory.free,memory.used <span class="token parameter variable">--format</span><span class="token operator">=</span>csv <span class="token operator">|</span> <span class="token function">tee</span> gpu-log.csv
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><blockquote>
+<p><code v-pre>-lms</code>     #循环动态显示;每毫秒<br>
+<code v-pre>--query-gpu</code>  #都记录哪些数据到csv文件中；<br>
+  <code v-pre>timestamp</code>     #输出每块显卡的时间戳：<code v-pre>nvidia-smi --format=csv --query-gpu=timestamp</code><br>
+  <code v-pre>pstate</code>     #输出GPU的性能状态：<code v-pre>nvidia-smi --format=csv --query-gpu=pstate</code><br>
+  <code v-pre>temperature.gpu</code>     #输出GPU的显卡温度：<code v-pre>nvidia-smi --format=csv --query-gpu=temperature.gpu</code><br>
+  <code v-pre>utilization.gpu</code>  #输出GPU的使用率：<code v-pre>nvidia-smi --format=csv --query-gpu=utilization.gpu</code><br>
+  <code v-pre>utilization.memory</code>  #输出显存的使用率：<code v-pre>nvidia-smi --format=csv --query-gpu=utilization.memory</code><br>
+  <code v-pre>memory.total</code>    #显存大小，输出总显存值：<code v-pre>nvidia-smi --format=csv --query-gpu=memory.total</code><br>
+  <code v-pre>memory.used</code>     #显存大小，输出使用了多少显存：<code v-pre>nvidia-smi --format=csv --query-gpu=memory.used</code><br>
+  <code v-pre>memory.free</code>     #显存大小，输出剩余多少显存：<code v-pre>nvidia-smi --format=csv --query-gpu=memory.free</code>；不太准，建议使用：总显存-使用显存来计算；<br>
+<code v-pre>--format</code>   #结果记录文件格式是csv类型。（csv）<br>
+<code v-pre>tee</code>      #双重重定向到gpu-log.csv文件中。</p>
+</blockquote>
+<h3 id="指定0显卡输出csv类型的显存总空间及使用空间和剩余空间" tabindex="-1"><a class="header-anchor" href="#指定0显卡输出csv类型的显存总空间及使用空间和剩余空间" aria-hidden="true">#</a> 指定0显卡输出csv类型的显存总空间及使用空间和剩余空间</h3>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>nvidia-smi <span class="token parameter variable">-i</span> <span class="token number">0</span> <span class="token parameter variable">--format</span><span class="token operator">=</span>csv  --query-gpu<span class="token operator">=</span>memory.total,memory.used,memory.free
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><blockquote>
+<p><code v-pre>-i</code>       #指定显卡编号；不使用<code v-pre>-i</code>，默认是显示所有的显卡型号的数据；<code v-pre>nvidia-smi --format=csv  --query-gpu=memory.total,memory.used,memory.free</code><br>
+<code v-pre>--format</code>    #结果记录文件格式是csv类型。（csv）<br>
+<code v-pre>--query-gpu</code>  #都记录哪些数据到csv文件中；<br>
+  <code v-pre>memory.total</code>    #显存大小，输出总显存值：<code v-pre>nvidia-smi --format=csv --query-gpu=memory.total</code><br>
+  <code v-pre>memory.used</code>     #显存大小，输出使用了多少显存：<code v-pre>nvidia-smi --format=csv --query-gpu=memory.used</code><br>
+  <code v-pre>memory.free</code>     #显存大小，输出剩余多少显存：<code v-pre>nvidia-smi --format=csv --query-gpu=memory.free</code>；不太准，建议使用：总显存-使用显存来计算；</p>
+</blockquote>
+<h2 id="查询所有的csv文件-format可使用的字段及字段说明、实例" tabindex="-1"><a class="header-anchor" href="#查询所有的csv文件-format可使用的字段及字段说明、实例" aria-hidden="true">#</a> 查询所有的csv文件<code v-pre>--format</code>可使用的字段及字段说明、实例</h2>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>csv			文件格式			vidia-smi <span class="token parameter variable">--format</span><span class="token operator">=</span>csv --query-gpu<span class="token operator">=</span>memory.total
+noheader	去除文件头部标题	vidia-smi <span class="token parameter variable">--format</span><span class="token operator">=</span>csv,noheader --query-gpu<span class="token operator">=</span>memory.total
+nounits		去除单位，比如MiB	nvidia-smi <span class="token parameter variable">--format</span><span class="token operator">=</span>csv,noheader,nounits --query-gpu<span class="token operator">=</span>memory.total
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="查询总显存不带头部标题" tabindex="-1"><a class="header-anchor" href="#查询总显存不带头部标题" aria-hidden="true">#</a> 查询总显存不带头部标题</h3>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>nvidia-smi <span class="token parameter variable">--format</span><span class="token operator">=</span>csv,noheader --query-gpu<span class="token operator">=</span>memory.total
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><figure><img src="https://img-blog.csdnimg.cn/831e04d479ec46649dc700ccaea54efe.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3 id="查询总显存不带头部标题并且不带单位" tabindex="-1"><a class="header-anchor" href="#查询总显存不带头部标题并且不带单位" aria-hidden="true">#</a> 查询总显存不带头部标题并且不带单位</h3>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>nvidia-smi <span class="token parameter variable">--format</span><span class="token operator">=</span>csv,noheader,nounits --query-gpu<span class="token operator">=</span>memory.total
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><figure><img src="https://img-blog.csdnimg.cn/7c4a9d532f7f476a868c8c6bc649fae1.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h1 id="附加-计算某显卡的剩余显存脚本" tabindex="-1"><a class="header-anchor" href="#附加-计算某显卡的剩余显存脚本" aria-hidden="true">#</a> 附加：计算某显卡的剩余显存脚本</h1>
+<blockquote>
+<p>下载地址：<a href="https://download.csdn.net/download/liu_chen_yang/87364591?spm=1001.2014.3001.5503" target="_blank" rel="noopener noreferrer">计算显卡的剩余显存脚本：nvidia.sh<ExternalLinkIcon/></a><br>
+下载时记得看下面的说明和用法哈；<br>
+注▲：没有积分可购买时，可私信我发你；但是还是需要进去看一下说明和用法，保证能够顺利使用。</p>
+</blockquote>
+</div></template>
+
+

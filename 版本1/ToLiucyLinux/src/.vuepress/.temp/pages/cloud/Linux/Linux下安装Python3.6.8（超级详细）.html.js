@@ -1,0 +1,14 @@
+export const data = JSON.parse("{\"key\":\"v-5563f17c\",\"path\":\"/cloud/Linux/Linux%E4%B8%8B%E5%AE%89%E8%A3%85Python3.6.8%EF%BC%88%E8%B6%85%E7%BA%A7%E8%AF%A6%E7%BB%86%EF%BC%89.html\",\"title\":\"前言：\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"[toc] &emsp;&emsp;在Linux系统中，一般都自带的有Python，不过Linux下自带Python大都是 2.7.5版本的，如果我们想要使用python3的话，最好是再重新装一个Python3的环境，让python2和python3共存。 特别注意：最好不要删除自带的python2.7.8，因为可能有其他地方依赖python2，直接删...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"http://liuchenyang.top/cloud/Linux/Linux%E4%B8%8B%E5%AE%89%E8%A3%85Python3.6.8%EF%BC%88%E8%B6%85%E7%BA%A7%E8%AF%A6%E7%BB%86%EF%BC%89.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"ToLiucyLinux\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"前言：\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"[toc] &emsp;&emsp;在Linux系统中，一般都自带的有Python，不过Linux下自带Python大都是 2.7.5版本的，如果我们想要使用python3的话，最好是再重新装一个Python3的环境，让python2和python3共存。 特别注意：最好不要删除自带的python2.7.8，因为可能有其他地方依赖python2，直接删...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"article:author\",\"content\":\"Liucy\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"前言：\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":null,\\\"author\\\":[{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"Liucy\\\",\\\"url\\\":\\\"http://liuchenyang.top\\\"}]}\"]]},\"headers\":[{\"level\":2,\"title\":\"下载python3.6.8的安装包\",\"slug\":\"下载python3-6-8的安装包\",\"link\":\"#下载python3-6-8的安装包\",\"children\":[]},{\"level\":2,\"title\":\"解压python3.6.8的安装包\",\"slug\":\"解压python3-6-8的安装包\",\"link\":\"#解压python3-6-8的安装包\",\"children\":[]},{\"level\":2,\"title\":\"安装依赖包\",\"slug\":\"安装依赖包\",\"link\":\"#安装依赖包\",\"children\":[]},{\"level\":2,\"title\":\"指定python3.6.8安装路径\",\"slug\":\"指定python3-6-8安装路径\",\"link\":\"#指定python3-6-8安装路径\",\"children\":[]},{\"level\":2,\"title\":\"编译安装python3.6.8\",\"slug\":\"编译安装python3-6-8\",\"link\":\"#编译安装python3-6-8\",\"children\":[]},{\"level\":2,\"title\":\"添加软链接\",\"slug\":\"添加软链接\",\"link\":\"#添加软链接\",\"children\":[]},{\"level\":2,\"title\":\"查看是否安装成功\",\"slug\":\"查看是否安装成功\",\"link\":\"#查看是否安装成功\",\"children\":[]},{\"level\":2,\"title\":\"相关文章\",\"slug\":\"相关文章\",\"link\":\"#相关文章\",\"children\":[]}],\"readingTime\":{\"minutes\":3.63,\"words\":1088},\"filePathRelative\":\"cloud/Linux/Linux下安装Python3.6.8（超级详细）.md\",\"copyright\":{\"author\":\"LiucyLinux(LiucyLinux.cn)\",\"license\":\"MIT\"},\"autoDesc\":true}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

@@ -1,0 +1,14 @@
+export const data = JSON.parse("{\"key\":\"v-6a7210f6\",\"path\":\"/cloud/Docker/%E5%A6%82%E4%BD%95%E4%BB%8Edocker%E9%95%9C%E5%83%8F%E9%87%8C%E6%8F%90%E5%8F%96dockerfile.html\",\"title\":\"从镜像中提取dockerfile的两种方法\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"hello，大家好，今天在玩docker的时候发现了很好用的东西，他就是用来提取镜像中的dockerfile的。这个是前者留下来的镜像，但是dockerfile被删除了，现在想知道dockerfile里面是如何写的，然后去查了查就有了新的发现——通过镜像来提取dockerfile，接下来我就把方法分享给大家。 在这里插入图片描述 [toc] 在这里插入...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"http://liuchenyang.top/cloud/Docker/%E5%A6%82%E4%BD%95%E4%BB%8Edocker%E9%95%9C%E5%83%8F%E9%87%8C%E6%8F%90%E5%8F%96dockerfile.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"ToLiucyLinux\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"从镜像中提取dockerfile的两种方法\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"hello，大家好，今天在玩docker的时候发现了很好用的东西，他就是用来提取镜像中的dockerfile的。这个是前者留下来的镜像，但是dockerfile被删除了，现在想知道dockerfile里面是如何写的，然后去查了查就有了新的发现——通过镜像来提取dockerfile，接下来我就把方法分享给大家。 在这里插入图片描述 [toc] 在这里插入...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"article:author\",\"content\":\"Liucy\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"从镜像中提取dockerfile的两种方法\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":null,\\\"author\\\":[{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"Liucy\\\",\\\"url\\\":\\\"http://liuchenyang.top\\\"}]}\"]]},\"headers\":[{\"level\":2,\"title\":\"1、history参数\",\"slug\":\"_1、history参数\",\"link\":\"#_1、history参数\",\"children\":[]},{\"level\":2,\"title\":\"2、dfimage\",\"slug\":\"_2、dfimage\",\"link\":\"#_2、dfimage\",\"children\":[]},{\"level\":2,\"title\":\"补充：如何设置永久的别名\",\"slug\":\"补充-如何设置永久的别名\",\"link\":\"#补充-如何设置永久的别名\",\"children\":[]}],\"readingTime\":{\"minutes\":2.54,\"words\":762},\"filePathRelative\":\"cloud/Docker/如何从docker镜像里提取dockerfile.md\",\"copyright\":{\"author\":\"LiucyLinux(LiucyLinux.cn)\",\"license\":\"MIT\"},\"autoDesc\":true}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

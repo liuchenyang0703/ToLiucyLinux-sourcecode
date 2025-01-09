@@ -1,0 +1,14 @@
+export const data = JSON.parse("{\"key\":\"v-61b02f84\",\"path\":\"/knowledge-block/star/14%20%E5%A6%82%E4%BD%95%E7%90%86%E8%A7%A3String%E6%98%AF%E4%B8%8D%E5%8F%AF%E5%8F%98%E7%9A%84.html\",\"title\":\"如何理解String是不可变的\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"1.何为不可变 众所周知， 在Java中， String类是不可变的。那么到底什么是不可变的对象呢？ 可以这样认为： 如果一个对象，在它创建完成之后，不能再改变它的状态，那么这个对象就是不可变的。不能改变状态的意思是，不能改变对象内的成员变量，包括基本数据类型的值不能改变，引用类型的变量不能指向其他的对象，引用类型指向的对象的状态也不能改变。 《jav...\"},\"headers\":[{\"level\":2,\"title\":\"1.何为不可变\",\"slug\":\"_1-何为不可变\",\"link\":\"#_1-何为不可变\",\"children\":[]},{\"level\":2,\"title\":\"2.对象和对象引用\",\"slug\":\"_2-对象和对象引用\",\"link\":\"#_2-对象和对象引用\",\"children\":[]},{\"level\":2,\"title\":\"3.String为什么不可变\",\"slug\":\"_3-string为什么不可变\",\"link\":\"#_3-string为什么不可变\",\"children\":[]},{\"level\":2,\"title\":\"4.不可变有什么好处\",\"slug\":\"_4-不可变有什么好处\",\"link\":\"#_4-不可变有什么好处\",\"children\":[]},{\"level\":2,\"title\":\"5.String小结\",\"slug\":\"_5-string小结\",\"link\":\"#_5-string小结\",\"children\":[]},{\"level\":2,\"title\":\"6.总结\",\"slug\":\"_6-总结\",\"link\":\"#_6-总结\",\"children\":[]}],\"readingTime\":{\"minutes\":7.57,\"words\":2272},\"filePathRelative\":\"knowledge-block/star/how-to-understand-string.md\",\"copyright\":{\"author\":\"LeoJavaer(toleojavaer.cn)\",\"license\":\"MIT\"},\"autoDesc\":true}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

@@ -1,0 +1,143 @@
+<template><div><blockquote>
+<p>👨‍🎓<strong>博主简介</strong></p>
+<p>  🏅<a href="https://blog.csdn.net/liu_chen_yang?type=blog" target="_blank" rel="noopener noreferrer">CSDN博客专家<ExternalLinkIcon/></a><br>
+  🏅<a href="https://blog.csdn.net/liu_chen_yang?type=blog" target="_blank" rel="noopener noreferrer">云计算领域优质创作者<ExternalLinkIcon/></a><br>
+  🏅<a href="https://bbs.huaweicloud.com/community/myblog" target="_blank" rel="noopener noreferrer">华为云开发者社区专家博主<ExternalLinkIcon/></a><br>
+  🏅<a href="https://developer.aliyun.com/my?spm=a2c6h.13148508.setting.3.21fc4f0eCmz1v3#/article?_k=zooqoz" target="_blank" rel="noopener noreferrer">阿里云开发者社区专家博主<ExternalLinkIcon/></a><br>
+💊<strong>交流社区：</strong><a href="https://bbs.csdn.net/forums/lcy" target="_blank" rel="noopener noreferrer">运维交流社区<ExternalLinkIcon/></a> 欢迎大家的加入！<br>
+🐋 希望大家多多支持，我们一起进步！😄<br>
+🎉如果文章对你有帮助的话，欢迎 点赞 👍🏻 评论 💬 收藏 ⭐️ 加关注+💗</p>
+</blockquote>
+<hr>
+<p>@[toc]</p>
+<h1 id="一、乱码问题排查" tabindex="-1"><a class="header-anchor" href="#一、乱码问题排查" aria-hidden="true">#</a> 一、乱码问题排查</h1>
+<h2 id="_1、要先看服务器的语言环境" tabindex="-1"><a class="header-anchor" href="#_1、要先看服务器的语言环境" aria-hidden="true">#</a> 1、要先看服务器的语言环境</h2>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code><span class="token comment"># 执行locale查看当前的语言环境</span>
+locale
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><figure><img src="https://img-blog.csdnimg.cn/img_convert/244d81f22af5bbf02071d5a6da30a80b.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>是<code v-pre>zh_CN.UTF-8</code>，有的服务器是 <code v-pre>en_US.UTF-8</code> 这两个都可以；</p>
+<font color=red>如果没有，就需要配置：</font><div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code><span class="token comment"># 方法一、修改/etc/locale.conf文件</span>
+<span class="token builtin class-name">echo</span> <span class="token string">"LANG=en_US.UTF-8"</span> /etc/locale.conf
+<span class="token comment"># 加载/etc/locale.conf文件，使其生效</span>
+<span class="token builtin class-name">source</span> /etc/locale.conf
+
+
+
+<span class="token comment"># 方法二、使用export LANG=en_US.UTF-8命令设置正确的语言环境（临时的）</span>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable"><span class="token environment constant">LANG</span></span><span class="token operator">=</span>en_US.UTF-8
+
+<span class="token comment"># 方法三、将环境变量添加到/etc/profile</span>
+<span class="token builtin class-name">echo</span> <span class="token string">"export LANG=en_US.UTF-8"</span> <span class="token operator">>></span> /etc/profile
+<span class="token comment"># 加载/etc/profile文件，使其生效</span>
+<span class="token builtin class-name">source</span> /etc/profile
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_2、查看服务器是否支持中文类型" tabindex="-1"><a class="header-anchor" href="#_2、查看服务器是否支持中文类型" aria-hidden="true">#</a> 2、查看服务器是否支持中文类型</h2>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>locale <span class="token parameter variable">-a</span> <span class="token operator">|</span><span class="token function">grep</span> <span class="token string">"zh_CN"</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><font color=red>如果没有的话就需要下载一个命令</font><div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>yum groupinstall chinese-support
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>下载完之后使用该中文包</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code><span class="token builtin class-name">echo</span> <span class="token string">"LANG=zh_CN.UTF-8"</span> /etc/locale.conf
+<span class="token comment"># 加载/etc/locale.conf文件，使其生效</span>
+<span class="token builtin class-name">source</span> /etc/locale.conf
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_3、查看上传文件的工具编码类型【这里以winscp来举例】" tabindex="-1"><a class="header-anchor" href="#_3、查看上传文件的工具编码类型【这里以winscp来举例】" aria-hidden="true">#</a> 3、查看上传文件的工具编码类型【这里以winscp来举例】</h2>
+<p>新建一个服务器连接</p>
+<figure><img src="https://img-blog.csdnimg.cn/img_convert/451e3d7fe9ae4b97f0861f6c71159c17.png" alt="image-20240511113806342" tabindex="0" loading="lazy"><figcaption>image-20240511113806342</figcaption></figure>
+<p>添加主机名等信息，然后点高级</p>
+<figure><img src="https://img-blog.csdnimg.cn/img_convert/1ac8f521fc5aad1922c6927582b03358.png" alt="image-20240511113841719" tabindex="0" loading="lazy"><figcaption>image-20240511113841719</figcaption></figure>
+<p>环境 -- &gt; 文件名utf8编码，给开启；</p>
+<figure><img src="https://img-blog.csdnimg.cn/img_convert/226ea6707594540f5d8da5cad597b0df.png" alt="image-20240511113939219" tabindex="0" loading="lazy"><figcaption>image-20240511113939219</figcaption></figure>
+<h1 id="二、如果已经上传了文件需要修改文件乱码" tabindex="-1"><a class="header-anchor" href="#二、如果已经上传了文件需要修改文件乱码" aria-hidden="true">#</a> 二、如果已经上传了文件需要修改文件乱码</h1>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code><span class="token comment"># 安装软件(centos)</span>
+yum <span class="token parameter variable">-y</span> <span class="token function">install</span> convmv
+<span class="token comment"># 安装软件(ubuntu)</span>
+<span class="token function">apt-get</span> update <span class="token parameter variable">-y</span>
+<span class="token function">apt</span> <span class="token parameter variable">-y</span> <span class="token function">install</span> convmv
+
+<span class="token comment"># 使用</span>
+convmv <span class="token parameter variable">-f</span> gbk <span class="token parameter variable">-t</span> utf-8 <span class="token parameter variable">-r</span> <span class="token parameter variable">--notest</span> /home/要操作的文件
+convmv <span class="token parameter variable">-f</span> gbk <span class="token parameter variable">-t</span> utf-8 <span class="token parameter variable">-r</span> <span class="token parameter variable">--notest</span> 要操作的文件
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>参数：</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>参数解析</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-f</td>
+<td>源编码</td>
+</tr>
+<tr>
+<td>-t</td>
+<td>要修改的编码</td>
+</tr>
+<tr>
+<td>-r</td>
+<td>递归处理子文件夹</td>
+</tr>
+<tr>
+<td>-i</td>
+<td>交互模式（询问每一个转换，防止误操作）</td>
+</tr>
+<tr>
+<td>--list</td>
+<td>显示所有可用编码</td>
+</tr>
+<tr>
+<td>--nosmart</td>
+<td>如果是utf8文件，忽略</td>
+</tr>
+<tr>
+<td>--notest</td>
+<td>直接转换不测试</td>
+</tr>
+<tr>
+<td>--replace</td>
+<td>文件相同直接替换</td>
+</tr>
+<tr>
+<td>--unescape</td>
+<td>可以做一下转义，比如把%20变成空格</td>
+</tr>
+<tr>
+<td>--upper</td>
+<td>全部转换成大写</td>
+</tr>
+<tr>
+<td>--lower</td>
+<td>全部转换成小定</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>其他：</p>
+<p>linux下有许多方便的小工具来转换编码：</p>
+<ul>
+<li>
+<p>文本内容转换<code v-pre> iconv</code></p>
+</li>
+<li>
+<p>文件名转换 <code v-pre>convmv</code></p>
+</li>
+</ul>
+<h1 id="三、实例【centos系统】" tabindex="-1"><a class="header-anchor" href="#三、实例【centos系统】" aria-hidden="true">#</a> 三、实例【centos系统】</h1>
+<p>上传的中午文件或者图片都是乱码，我们要以第二种方式，已经上传了的文件进行乱码修改；</p>
+<figure><img src="https://img-blog.csdnimg.cn/img_convert/7e3bd37ed908da28e688a26f7da06cdd.png" alt="image-20240511132046272" tabindex="0" loading="lazy"><figcaption>image-20240511132046272</figcaption></figure>
+<p>1、首先安装命令</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>yum <span class="token parameter variable">-y</span> <span class="token function">install</span> convmv
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><figure><img src="https://img-blog.csdnimg.cn/img_convert/bfbfe0fa199ae78b7e7ccf7162509ad5.png" alt="image-20240511132246619" tabindex="0" loading="lazy"><figcaption>image-20240511132246619</figcaption></figure>
+<p>2、对乱码文件、目录下的所有乱码文件进行格式转换</p>
+<ul>
+<li>对单个乱码文件进行格式转换（一般用于目录下只有单个文件或者可以复制的时候转换，乱码是打不出来的）</li>
+</ul>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>convmv <span class="token parameter variable">-f</span> gbk <span class="token parameter variable">-t</span> utf-8 <span class="token parameter variable">-r</span> <span class="token parameter variable">--notest</span> ?龳??????.jpg
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><figure><img src="https://img-blog.csdnimg.cn/img_convert/20db311a2cba2891304acff5b78d99af.png" alt="image-20240511132623074" tabindex="0" loading="lazy"><figcaption>image-20240511132623074</figcaption></figure>
+<ul>
+<li>对整个目录下所有的乱码文件进行格式转换</li>
+</ul>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>convmv <span class="token parameter variable">-f</span> gbk <span class="token parameter variable">-t</span> utf-8 <span class="token parameter variable">-r</span> <span class="token parameter variable">--notest</span> /home/lcy/cs/luanma/
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><figure><img src="https://img-blog.csdnimg.cn/img_convert/06406d61c051ed3d3bf03e7160c8589b.png" alt="image-20240511132911517" tabindex="0" loading="lazy"><figcaption>image-20240511132911517</figcaption></figure>
+<p>格式转换完成。</p>
+</div></template>
+
+

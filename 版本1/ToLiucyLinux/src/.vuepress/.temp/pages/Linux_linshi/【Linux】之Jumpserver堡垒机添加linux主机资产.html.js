@@ -1,0 +1,14 @@
+export const data = JSON.parse("{\"key\":\"v-aca63110\",\"path\":\"/Linux_linshi/%E3%80%90Linux%E3%80%91%E4%B9%8BJumpserver%E5%A0%A1%E5%9E%92%E6%9C%BA%E6%B7%BB%E5%8A%A0linux%E4%B8%BB%E6%9C%BA%E8%B5%84%E4%BA%A7.html\",\"title\":\"【Linux】之Jumpserver堡垒机添加linux主机资产\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"【Linux】之Jumpserver堡垒机添加linux主机资产\",\"icon\":\"circle-info\",\"order\":1,\"category\":[\"Linux\"],\"tag\":[\"Linux\",\"Jumpserver\",\"跳板机\",\"运维\"],\"pageview\":false,\"date\":\"2024-12-18T00:00:00.000Z\",\"comment\":false,\"breadcrumb\":false,\"seo\":false,\"head\":[]},\"headers\":[{\"level\":2,\"title\":\"资产要求\",\"slug\":\"资产要求\",\"link\":\"#资产要求\",\"children\":[]},{\"level\":2,\"title\":\"系统管理\",\"slug\":\"系统管理\",\"link\":\"#系统管理\",\"children\":[{\"level\":3,\"title\":\"1.用户管理\",\"slug\":\"_1-用户管理\",\"link\":\"#_1-用户管理\",\"children\":[{\"level\":4,\"title\":\"1.1  添加登录用户（用户列表）\",\"slug\":\"_1-1-添加登录用户-用户列表\",\"link\":\"#_1-1-添加登录用户-用户列表\",\"children\":[]},{\"level\":4,\"title\":\"1.2 添加用户组\",\"slug\":\"_1-2-添加用户组\",\"link\":\"#_1-2-添加用户组\",\"children\":[]},{\"level\":4,\"title\":\"1.3 角色列表\",\"slug\":\"_1-3-角色列表\",\"link\":\"#_1-3-角色列表\",\"children\":[]},{\"level\":4,\"title\":\"1.4 使用新建的用户来登录jumpserver\",\"slug\":\"_1-4-使用新建的用户来登录jumpserver\",\"link\":\"#_1-4-使用新建的用户来登录jumpserver\",\"children\":[]}]},{\"level\":3,\"title\":\"2.资产管理\",\"slug\":\"_2-资产管理\",\"link\":\"#_2-资产管理\",\"children\":[{\"level\":4,\"title\":\"2.1 系统用户\",\"slug\":\"_2-1-系统用户\",\"link\":\"#_2-1-系统用户\",\"children\":[]},{\"level\":4,\"title\":\"2.2 网域列表\",\"slug\":\"_2-2-网域列表\",\"link\":\"#_2-2-网域列表\",\"children\":[]},{\"level\":4,\"title\":\"2.3 资产列表\",\"slug\":\"_2-3-资产列表\",\"link\":\"#_2-3-资产列表\",\"children\":[]},{\"level\":4,\"title\":\"2.4 平台列表（可忽略，因为基本都是全的）\",\"slug\":\"_2-4-平台列表-可忽略-因为基本都是全的\",\"link\":\"#_2-4-平台列表-可忽略-因为基本都是全的\",\"children\":[]}]},{\"level\":3,\"title\":\"3.权限管理\",\"slug\":\"_3-权限管理\",\"link\":\"#_3-权限管理\",\"children\":[{\"level\":4,\"title\":\"3.1 资产授权\",\"slug\":\"_3-1-资产授权\",\"link\":\"#_3-1-资产授权\",\"children\":[]}]}]},{\"level\":2,\"title\":\"登录普通用户连接linux服务器\",\"slug\":\"登录普通用户连接linux服务器\",\"link\":\"#登录普通用户连接linux服务器\",\"children\":[]},{\"level\":2,\"title\":\"连接linux服务器传输文件\",\"slug\":\"连接linux服务器传输文件\",\"link\":\"#连接linux服务器传输文件\",\"children\":[]},{\"level\":2,\"title\":\"相关文章\",\"slug\":\"相关文章\",\"link\":\"#相关文章\",\"children\":[]}],\"readingTime\":{\"minutes\":5.98,\"words\":1794},\"filePathRelative\":\"Linux_linshi/【Linux】之Jumpserver堡垒机添加linux主机资产.md\",\"localizedDate\":\"2024年12月18日\",\"copyright\":{\"author\":\"LiucyLinux(LiucyLinux.cn)\",\"license\":\"MIT\"}}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

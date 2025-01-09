@@ -1,0 +1,14 @@
+export const data = JSON.parse("{\"key\":\"v-288a9a26\",\"path\":\"/Linux_linshi/%E3%80%90Linux%E3%80%91%E4%B9%8B%E3%80%90%E7%BD%91%E7%BB%9C%E3%80%91%E7%9B%B8%E5%85%B3%E7%9A%84%E5%91%BD%E4%BB%A4%E5%8F%8A%E8%A7%A3%E6%9E%90_ethtool%E3%80%81nload%E3%80%81nethogs%E3%80%81iftop%E3%80%81iptraf%E3%80%81ifstat_.html\",\"title\":\"【Linux】之【网络】相关的命令及解析[ethtool、nload、nethogs、iftop、iptraf、ifstat]\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"【Linux】之【网络】相关的命令及解析[ethtool、nload、nethogs、iftop、iptraf、ifstat]\",\"icon\":\"circle-info\",\"order\":1,\"category\":[\"Linux\"],\"tag\":[\"Linux\",\"网络\",\"运维\"],\"pageview\":false,\"date\":\"2024-12-18T00:00:00.000Z\",\"comment\":false,\"breadcrumb\":false,\"seo\":false,\"head\":[]},\"headers\":[{\"level\":2,\"title\":\"一、网络带宽命令\",\"slug\":\"一、网络带宽命令\",\"link\":\"#一、网络带宽命令\",\"children\":[{\"level\":3,\"title\":\"1、ethtool – 查询与设置网卡参数\",\"slug\":\"_1、ethtool-–-查询与设置网卡参数\",\"link\":\"#_1、ethtool-–-查询与设置网卡参数\",\"children\":[]},{\"level\":3,\"title\":\"2、nload – 实时统计网卡带宽使用率工具\",\"slug\":\"_2、nload-–-实时统计网卡带宽使用率工具\",\"link\":\"#_2、nload-–-实时统计网卡带宽使用率工具\",\"children\":[]}]},{\"level\":2,\"title\":\"二、网络命令\",\"slug\":\"二、网络命令\",\"link\":\"#二、网络命令\",\"children\":[{\"level\":3,\"title\":\"1、nethogs – 实时统计网络带宽使用率工具\",\"slug\":\"_1、nethogs-–-实时统计网络带宽使用率工具\",\"link\":\"#_1、nethogs-–-实时统计网络带宽使用率工具\",\"children\":[]},{\"level\":3,\"title\":\"2、iftop – 套接字及进程的网络利用率\",\"slug\":\"_2、iftop-–-套接字及进程的网络利用率\",\"link\":\"#_2、iftop-–-套接字及进程的网络利用率\",\"children\":[]},{\"level\":3,\"title\":\"3、iptraf – 实时监视网卡流量\",\"slug\":\"_3、iptraf-–-实时监视网卡流量\",\"link\":\"#_3、iptraf-–-实时监视网卡流量\",\"children\":[]},{\"level\":3,\"title\":\"4、ifstat – 统计网络信息\",\"slug\":\"_4、ifstat-–-统计网络信息\",\"link\":\"#_4、ifstat-–-统计网络信息\",\"children\":[]}]},{\"level\":2,\"title\":\"总结\",\"slug\":\"总结\",\"link\":\"#总结\",\"children\":[]},{\"level\":2,\"title\":\"相关文章\",\"slug\":\"相关文章\",\"link\":\"#相关文章\",\"children\":[]}],\"readingTime\":{\"minutes\":6.34,\"words\":1903},\"filePathRelative\":\"Linux_linshi/【Linux】之【网络】相关的命令及解析[ethtool、nload、nethogs、iftop、iptraf、ifstat].md\",\"localizedDate\":\"2024年12月18日\",\"copyright\":{\"author\":\"LiucyLinux(LiucyLinux.cn)\",\"license\":\"MIT\"}}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

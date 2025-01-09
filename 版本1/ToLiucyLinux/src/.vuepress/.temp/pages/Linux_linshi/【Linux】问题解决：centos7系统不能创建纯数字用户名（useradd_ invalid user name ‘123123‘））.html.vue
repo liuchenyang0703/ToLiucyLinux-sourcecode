@@ -1,0 +1,59 @@
+<template><div><blockquote>
+<p>👨‍🎓<strong>博主简介</strong></p>
+<p>  🏅<a href="https://blog.csdn.net/liu_chen_yang?type=blog" target="_blank" rel="noopener noreferrer">云计算领域优质创作者<ExternalLinkIcon/></a><br>
+  🏅<a href="https://bbs.huaweicloud.com/community/myblog" target="_blank" rel="noopener noreferrer">华为云开发者社区专家博主<ExternalLinkIcon/></a><br>
+  🏅<a href="https://developer.aliyun.com/my?spm=a2c6h.13148508.setting.3.21fc4f0eCmz1v3#/article?_k=zooqoz" target="_blank" rel="noopener noreferrer">阿里云开发者社区专家博主<ExternalLinkIcon/></a><br>
+💊<strong>交流社区：</strong><a href="https://bbs.csdn.net/forums/lcy" target="_blank" rel="noopener noreferrer">运维交流社区<ExternalLinkIcon/></a> 欢迎大家的加入！<br>
+🐋 希望大家多多支持，我们一起进步！😄<br>
+🎉如果文章对你有帮助的话，欢迎 点赞 👍🏻 评论 💬 收藏 ⭐️ 加关注+💗</p>
+</blockquote>
+<hr>
+<h2 id="报错数据" tabindex="-1"><a class="header-anchor" href="#报错数据" aria-hidden="true">#</a> 报错数据</h2>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code><span class="token punctuation">[</span>root@k8s-master ~<span class="token punctuation">]</span><span class="token comment"># useradd 123123</span>
+useradd: invalid user name <span class="token string">'123123'</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="报错原因" tabindex="-1"><a class="header-anchor" href="#报错原因" aria-hidden="true">#</a> 报错原因</h2>
+<blockquote>
+<p>是因为linux系统用户的uid就是纯数字，所以被限制不能创建纯数字用户名</p>
+</blockquote>
+<h2 id="解决思路" tabindex="-1"><a class="header-anchor" href="#解决思路" aria-hidden="true">#</a> 解决思路</h2>
+<p>其实想了一下，有这样的限制也是有道理的，毕竟linux系统用户的uid就是纯数字的</p>
+<p>比如像id 之类的命令，是可以直接指定uid或者用户名的，如果是纯数字了，到底应该视为什么呢？</p>
+<p>不过测试过，冲突了还是只显示用户名为纯数字的用户信息，总之只会显示一个用户的信息</p>
+<p>查询了redhat相关的文档，其中redhat 7.6 版本的Release_Notes已经说明了,如下:</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>All-numeric user and group names <span class="token keyword">in</span> shadow-utils are now deprecated
+Creating user and group names consisting purely of numeric characters using the <span class="token function">useradd</span> and
+<span class="token function">groupadd</span> commands is now deprecated and will be removed from the system with the next major
+release. Such names can potentially confuse many tools that work with user and group names and user
+and group ids <span class="token punctuation">(</span>which are numbers<span class="token punctuation">)</span>.
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>也就是说，从<code v-pre>7.6版本</code>开始弃用创建纯数字的用户名；<br>
+但是<code v-pre>7.6--7.9版本</code>之间可以使用环境变量来创建的；<br>
+但是从<code v-pre>8版本</code>会直接删除那种使用命令创建纯数字用户名的方式，使用环境变量也不能来创建。</p>
+<p>后来在Red Hat Bugzilla – Bug 1672958 文档中也发现了此解释,如下</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>The <span class="token function">useradd</span> and <span class="token function">groupadd</span> commands disallow user and group names
+consisting purely of numeric characters since Red Hat Enterprise Linux <span class="token number">7.6</span>.
+The reason <span class="token keyword">for</span> not allowing such names is that this can confuse potentially
+many tools that work with user and group names and user and group ids
+<span class="token punctuation">(</span>which are numbers<span class="token punctuation">)</span>. However due to some deployments depending on allowing all-numeric user names
+this erratum makes <span class="token function">useradd</span> and <span class="token function">groupadd</span> commands to allow all-numeric user and group names
+<span class="token keyword">if</span> environment variable SHADOW_ALLOW_ALL_NUMERIC_USER is set.
+Please note that the all-numeric user and group names are
+deprecated <span class="token keyword">in</span> Red Hat Enterprise Linux <span class="token number">7</span> and the support will be completely removed <span class="token keyword">in</span> Red Hat Enterprise Linux <span class="token number">8</span>.
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="解决方法-适用于centos-7-6-7-9" tabindex="-1"><a class="header-anchor" href="#解决方法-适用于centos-7-6-7-9" aria-hidden="true">#</a> 解决方法（适用于centos 7.6-7.9）</h2>
+<p>但是终究还是有方法改变这个限制的，可以使用export定义SHADOW_ALLOW_ALL_NUMERIC_USER变量的值为1，如下：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code><span class="token comment">#设置临时环境变量</span>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">SHADOW_ALLOW_ALL_NUMERIC_USER</span><span class="token operator">=</span><span class="token number">1</span>
+
+<span class="token comment">#创建纯数字用户</span>
+<span class="token function">useradd</span> <span class="token number">123123</span>
+<span class="token function">useradd</span> <span class="token parameter variable">-g</span> <span class="token builtin class-name">test</span> <span class="token parameter variable">-s</span> /sbin/nologin <span class="token number">123123</span>
+
+<span class="token comment">#查看最后3个用户</span>
+<span class="token function">tail</span> <span class="token parameter variable">-n</span> <span class="token number">3</span> /etc/passwd
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<li>设置永久生效</li>
+</ul>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code><span class="token builtin class-name">echo</span> <span class="token string">"export SHADOW_ALLOW_ALL_NUMERIC_USER=1"</span> <span class="token operator">>></span> /root/.bashrc
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>这样，每次连接该ip的时候都会自动生效了。</p>
+</div></template>
+
+

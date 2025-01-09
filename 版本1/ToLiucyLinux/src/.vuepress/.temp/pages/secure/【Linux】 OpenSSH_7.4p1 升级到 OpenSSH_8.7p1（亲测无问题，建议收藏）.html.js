@@ -1,0 +1,14 @@
+export const data = JSON.parse("{\"key\":\"v-347fe80c\",\"path\":\"/secure/%E3%80%90Linux%E3%80%91%20OpenSSH_7.4p1%20%E5%8D%87%E7%BA%A7%E5%88%B0%20OpenSSH_8.7p1%EF%BC%88%E4%BA%B2%E6%B5%8B%E6%97%A0%E9%97%AE%E9%A2%98%EF%BC%8C%E5%BB%BA%E8%AE%AE%E6%94%B6%E8%97%8F%EF%BC%89.html\",\"title\":\"【Linux】 OpenSSH_7.4p1 升级到 OpenSSH_8.7p1（亲测无问题，建议收藏）\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"【Linux】 OpenSSH_7.4p1 升级到 OpenSSH_8.7p1（亲测无问题，建议收藏）\",\"icon\":\"circle-info\",\"order\":1,\"category\":[\"Linux\",\"服务器安全\"],\"tag\":[\"Linux\",\"服务器安全\",\"openssh\",\"运维\"],\"pageview\":false,\"date\":\"2024-12-15T00:00:00.000Z\",\"comment\":false,\"breadcrumb\":false,\"description\":\"👨‍🎓博主简介 &emsp;&emsp;🏅云计算领域优质创作者 (https://blog.csdn.net/liuchenyang?type=blog) &emsp;&emsp;🏅华为云开发者社区专家博主 (https://bbs.huaweicloud.com/community/myblog) &emsp;&emsp;🏅阿里云开发者社区...\"},\"headers\":[{\"level\":2,\"title\":\"文章声明\",\"slug\":\"文章声明\",\"link\":\"#文章声明\",\"children\":[]},{\"level\":2,\"title\":\"前述\",\"slug\":\"前述\",\"link\":\"#前述\",\"children\":[]},{\"level\":2,\"title\":\"安装一些必要的命令（需要用到的）\",\"slug\":\"安装一些必要的命令-需要用到的\",\"link\":\"#安装一些必要的命令-需要用到的\",\"children\":[]},{\"level\":2,\"title\":\"Centos 服务器升级OpenSSH\",\"slug\":\"centos-服务器升级openssh\",\"link\":\"#centos-服务器升级openssh\",\"children\":[]},{\"level\":2,\"title\":\"Ubuntu 服务器升级OpenSSH\",\"slug\":\"ubuntu-服务器升级openssh\",\"link\":\"#ubuntu-服务器升级openssh\",\"children\":[]},{\"level\":2,\"title\":\"参考文献\",\"slug\":\"参考文献\",\"link\":\"#参考文献\",\"children\":[]},{\"level\":2,\"title\":\"相关专栏\",\"slug\":\"相关专栏\",\"link\":\"#相关专栏\",\"children\":[]},{\"level\":2,\"title\":\"相关文章\",\"slug\":\"相关文章\",\"link\":\"#相关文章\",\"children\":[]}],\"readingTime\":{\"minutes\":5.96,\"words\":1789},\"filePathRelative\":\"secure/【Linux】 OpenSSH_7.4p1 升级到 OpenSSH_8.7p1（亲测无问题，建议收藏）.md\",\"localizedDate\":\"2024年12月15日\",\"copyright\":{\"author\":\"LiucyLinux(LiucyLinux.cn)\",\"license\":\"MIT\"},\"autoDesc\":true}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

@@ -1,0 +1,75 @@
+<template><div><p>@[toc]</p>
+<h1 id="前言" tabindex="-1"><a class="header-anchor" href="#前言" aria-hidden="true">#</a> 前言</h1>
+<p>  因为项目要求，和一般部署服务的时候需要一些python的模块，然后并没有外网，所以，只好下载一些需要的python模块；在这之前查阅了很多文章，但都是直接安装的，找这种离线包安装的特别困难，所以，好不容易找到了几篇，我就把这个写成一篇文章，供大家观看，感谢！</p>
+<h2 id="安装python3和pip3" tabindex="-1"><a class="header-anchor" href="#安装python3和pip3" aria-hidden="true">#</a> 安装python3和pip3</h2>
+<br/>
+<p><strong>详细的安装教程请参考链接：<a href="https://blog.csdn.net/liu_chen_yang/article/details/123680594" target="_blank" rel="noopener noreferrer">Linux下安装Python3.6.8（超级详细）<ExternalLinkIcon/></a></strong></p>
+<hr>
+<h2 id="升级-更新pip3" tabindex="-1"><a class="header-anchor" href="#升级-更新pip3" aria-hidden="true">#</a> 升级/更新pip3</h2>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>pip3 <span class="token function">install</span> <span class="token parameter variable">--upgrade</span> pip
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2 id="安装项目所需的模块" tabindex="-1"><a class="header-anchor" href="#安装项目所需的模块" aria-hidden="true">#</a> 安装项目所需的模块</h2>
+<br>
+<h3 id="在线安装所需模块" tabindex="-1"><a class="header-anchor" href="#在线安装所需模块" aria-hidden="true">#</a> 在线安装所需模块</h3>
+<p><strong><font color=teal>格式：</font></strong></p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>pip3 <span class="token function">install</span> 所需模块的名字
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong><font color=teal>实例一：</font></strong></p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>pip3 <span class="token function">install</span> numpy
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong><font color=teal>实例二（指定版本）：</font></strong></p>
+<blockquote>
+<p>模块名==指定版本</p>
+</blockquote>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>pip3 <span class="token function">install</span> <span class="token assign-left variable">numpy</span><span class="token operator">==</span><span class="token number">1.19</span>.5
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><br>
+<h3 id="离线安装-下载所需模块和离线包" tabindex="-1"><a class="header-anchor" href="#离线安装-下载所需模块和离线包" aria-hidden="true">#</a> 离线安装/下载所需模块和离线包</h3>
+<h4 id="_1、单个模块下载-指定路径" tabindex="-1"><a class="header-anchor" href="#_1、单个模块下载-指定路径" aria-hidden="true">#</a> ①、单个模块下载&amp;&amp;指定路径</h4>
+<p><strong><font color=teal>格式：</font></strong></p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>pip3 download 模块名 <span class="token parameter variable">-d</span> 下载的包的存储路径
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong><font color=teal>实例一：</font></strong></p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>pip3 download numpy <span class="token parameter variable">-d</span> /data/packages/
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><img src="https://img-blog.csdnimg.cn/065a65e2d7f04562942252f528847f5e.png" alt="" loading="lazy"><br>
+<img src="https://img-blog.csdnimg.cn/a8ddc3995f354fc89ba0ec158ee7cc8e.png" alt="" loading="lazy"></p>
+<ul>
+<li>默认就是最新版本</li>
+</ul>
+<p><strong><font color=teal>实例二（指定版本）：</font></strong></p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>pip3 download <span class="token assign-left variable">numpy</span><span class="token operator">==</span><span class="token number">1.18</span>.5 <span class="token parameter variable">-d</span> /data/packages/
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><figure><img src="https://img-blog.csdnimg.cn/3fdb968ef6684caab60a51fee70dae61.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h4 id="_2、批量下载模块-指定目录" tabindex="-1"><a class="header-anchor" href="#_2、批量下载模块-指定目录" aria-hidden="true">#</a> ②、批量下载模块&amp;&amp;指定目录</h4>
+<font size=3>**创建文件**</font><p>批量下载模块，首先要创建一个文件（文件名任意）</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code><span class="token comment">#创建一个文件并进入</span>
+<span class="token function">vim</span> python-pack
+
+<span class="token comment">#文件内可以写你想要下载的模块名，我的就下载这些；</span>
+chardet
+joblib
+numpy
+ocrd_fork_pylsd
+PyMuPDF
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><figure><img src="https://img-blog.csdnimg.cn/25ec97854ef54f54bea6bddadc0a23ea.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<font size=3>**批量下载**</font><p><strong><font color=teal>格式：</font></strong></p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>pip3 download <span class="token parameter variable">-r</span> 批量下载模块的文件名 <span class="token parameter variable">-d</span> 指定下载的路径
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong><font color=teal>实例：</font></strong></p>
+<p><strong><font color=red>注意自己的批量下载模块的文件的路径，也要写正确.</font></strong></p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>pip3 download <span class="token parameter variable">-r</span> python-pack <span class="token parameter variable">-d</span> /data/packages/
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><blockquote>
+<p>第一次下载和我这个图片可能有一些不一样，因为我这是测试的时候已经下载过了，删除又重新下载的（会有缓存），所以，与第一次下载过程是有一些差别的，不过，没有任何影响。</p>
+</blockquote>
+<p><img src="https://img-blog.csdnimg.cn/9d5a1ab710eb4c1baf0db2158ac551a4.png" alt="" loading="lazy"><br>
+最后我们就可以看到，指定的一些模块已经下载成离线包了，就可以下载到本地拿去用了。<br>
+要是想下载指定版本的，和上面的一样，只不过是在文本里修改就好了；例如：numpy==1.18.5。</p>
+<h1 id="附加" tabindex="-1"><a class="header-anchor" href="#附加" aria-hidden="true">#</a> 附加</h1>
+<p>如果安装慢，可以换成国内源：</p>
+<p>方法一：pip install 安装包名字 -i <a href="http://pypi.doubanio.com/simple/" target="_blank" rel="noopener noreferrer">http://pypi.doubanio.com/simple/<ExternalLinkIcon/></a> --trusted-host <a href="http://pypi.doubanio.com" target="_blank" rel="noopener noreferrer">pypi.doubanio.com<ExternalLinkIcon/></a> //豆瓣镜像网站</p>
+<p>方法二：pip install 安装包名字 -i <a href="http://pypi.douban.com/simple/" target="_blank" rel="noopener noreferrer">http://pypi.douban.com/simple/<ExternalLinkIcon/></a> --trusted-host <a href="http://pypi.douban.com" target="_blank" rel="noopener noreferrer">pypi.douban.com<ExternalLinkIcon/></a> //豆瓣</p>
+<p>方法三：pip install 安装包名字 -i <a href="https://pypi.tuna.tsinghua.edu.cn/simple/" target="_blank" rel="noopener noreferrer">https://pypi.tuna.tsinghua.edu.cn/simple/<ExternalLinkIcon/></a> --trusted-host <a href="http://pypi.tuna.tsinghua.edu.cn" target="_blank" rel="noopener noreferrer">pypi.tuna.tsinghua.edu.cn<ExternalLinkIcon/></a> //清华大学</p>
+<p>方法四：pip install 安装包名字 -i <a href="http://mirrors.aliyun.com/pypi/simple" target="_blank" rel="noopener noreferrer">http://mirrors.aliyun.com/pypi/simple<ExternalLinkIcon/></a>  阿里云</p>
+<p>方法五：pip install 安装包名字 -i <a href="https://pypi.mirrors.ustc.edu.cn/simple" target="_blank" rel="noopener noreferrer">https://pypi.mirrors.ustc.edu.cn/simple<ExternalLinkIcon/></a>  中国科技大学</p>
+<p>方法六：pip install 安装包名字 -i <a href="http://pypi.mirrors.ustc.edu.cn/simple" target="_blank" rel="noopener noreferrer">http://pypi.mirrors.ustc.edu.cn/simple<ExternalLinkIcon/></a>  中国科学技术大学</p>
+<h1 id="总结" tabindex="-1"><a class="header-anchor" href="#总结" aria-hidden="true">#</a> 总结</h1>
+<h2 id="相关文章" tabindex="-1"><a class="header-anchor" href="#相关文章" aria-hidden="true">#</a> 相关文章</h2>
+<blockquote>
+<p><a href="https://blog.csdn.net/liu_chen_yang/article/details/123680594" target="_blank" rel="noopener noreferrer">Linux下安装Python3.6.8（超级详细）<ExternalLinkIcon/></a></p>
+</blockquote>
+</div></template>
+
+

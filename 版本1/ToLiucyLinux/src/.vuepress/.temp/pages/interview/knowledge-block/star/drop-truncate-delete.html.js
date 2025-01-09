@@ -1,0 +1,14 @@
+export const data = JSON.parse("{\"key\":\"v-9357fa80\",\"path\":\"/interview/knowledge-block/star/drop-truncate-delete.html\",\"title\":\"drop、truncate和delete的区别\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"drop、truncate和delete的区别\",\"icon\":\"circle-info\",\"order\":17,\"pageview\":false,\"date\":\"2024-07-09T15:54:24.000Z\",\"comment\":false,\"breadcrumb\":false,\"description\":\"1.前言 对于drop、truncate和delete，虽然简单，但是真要使用或者面试时候问到还是需要有一定的总结，今天来简单讲讲他们直接的区别。在此之前先简单了解下什么是DDL和DML。 DDL(数据定义语言,Data Definition Language)：DDL代表数据定义语言，是一种有助于创建数据库模式的SQL命令。DDL中常用的命令有：cr...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"http://liuchenyang.top/interview/knowledge-block/star/drop-truncate-delete.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"ToLiucyLinux\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"drop、truncate和delete的区别\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"1.前言 对于drop、truncate和delete，虽然简单，但是真要使用或者面试时候问到还是需要有一定的总结，今天来简单讲讲他们直接的区别。在此之前先简单了解下什么是DDL和DML。 DDL(数据定义语言,Data Definition Language)：DDL代表数据定义语言，是一种有助于创建数据库模式的SQL命令。DDL中常用的命令有：cr...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"article:author\",\"content\":\"Liucy\"}],[\"meta\",{\"property\":\"article:published_time\",\"content\":\"2024-07-09T15:54:24.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"drop、truncate和delete的区别\\\",\\\"image\\\":[\\\"\\\"],\\\"datePublished\\\":\\\"2024-07-09T15:54:24.000Z\\\",\\\"dateModified\\\":null,\\\"author\\\":[{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"Liucy\\\",\\\"url\\\":\\\"http://liuchenyang.top\\\"}]}\"]]},\"headers\":[{\"level\":2,\"title\":\"1.前言\",\"slug\":\"_1-前言\",\"link\":\"#_1-前言\",\"children\":[]},{\"level\":2,\"title\":\"2.drop\",\"slug\":\"_2-drop\",\"link\":\"#_2-drop\",\"children\":[]},{\"level\":2,\"title\":\"3.truncate\",\"slug\":\"_3-truncate\",\"link\":\"#_3-truncate\",\"children\":[]},{\"level\":2,\"title\":\"4.delete\",\"slug\":\"_4-delete\",\"link\":\"#_4-delete\",\"children\":[]},{\"level\":2,\"title\":\"5.总结\",\"slug\":\"_5-总结\",\"link\":\"#_5-总结\",\"children\":[]}],\"readingTime\":{\"minutes\":5.4,\"words\":1620},\"filePathRelative\":\"interview/knowledge-block/star/drop-truncate-delete.md\",\"localizedDate\":\"2024年7月9日\",\"copyright\":{\"author\":\"LiucyLinux(LiucyLinux.cn)\",\"license\":\"MIT\"},\"autoDesc\":true}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

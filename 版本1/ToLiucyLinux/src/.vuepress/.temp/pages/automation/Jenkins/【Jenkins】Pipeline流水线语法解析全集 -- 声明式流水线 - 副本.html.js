@@ -1,0 +1,14 @@
+export const data = JSON.parse("{\"key\":\"v-32c0d0b6\",\"path\":\"/automation/jenkins/%E3%80%90Jenkins%E3%80%91Pipeline%E6%B5%81%E6%B0%B4%E7%BA%BF%E8%AF%AD%E6%B3%95%E8%A7%A3%E6%9E%90%E5%85%A8%E9%9B%86%20--%20%E5%A3%B0%E6%98%8E%E5%BC%8F%E6%B5%81%E6%B0%B4%E7%BA%BF%20-%20%E5%89%AF%E6%9C%AC.html\",\"title\":\"【Jenkins】Pipeline流水线语法解析全集 -- 声明式流水线\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"【Jenkins】Pipeline流水线语法解析全集 -- 声明式流水线\",\"icon\":\"circle-info\",\"order\":1,\"category\":[\"Linux\",\"Jenkins\",\"自动化运维\"],\"tag\":[\"Linux\",\"Jenkins\",\"自动化运维\",\"运维\"],\"pageview\":false,\"date\":\"2024-12-24T00:00:00.000Z\",\"comment\":false,\"breadcrumb\":false,\"description\":\"在这里插入图片描述 👨‍🎓博主简介 &emsp;&emsp;🏅CSDN博客专家 (https://blog.csdn.net/liuchenyang?type=blog) &emsp;&emsp;🏅云计算领域优质创作者 (https://blog.csdn.net/liuchenyang?type=blog) &emsp;&emsp;🏅华为云...\"},\"headers\":[{\"level\":2,\"title\":\"前言\",\"slug\":\"前言\",\"link\":\"#前言\",\"children\":[]},{\"level\":2,\"title\":\"声明式流水线\",\"slug\":\"声明式流水线\",\"link\":\"#声明式流水线\",\"children\":[]},{\"level\":2,\"title\":\"如何创建一个node节点？\",\"slug\":\"如何创建一个node节点\",\"link\":\"#如何创建一个node节点\",\"children\":[{\"level\":3,\"title\":\"agent\",\"slug\":\"agent\",\"link\":\"#agent\",\"children\":[]},{\"level\":3,\"title\":\"stages\",\"slug\":\"stages\",\"link\":\"#stages\",\"children\":[]},{\"level\":3,\"title\":\"stage\",\"slug\":\"stage\",\"link\":\"#stage\",\"children\":[]},{\"level\":3,\"title\":\"steps\",\"slug\":\"steps\",\"link\":\"#steps\",\"children\":[]},{\"level\":3,\"title\":\"post\",\"slug\":\"post\",\"link\":\"#post\",\"children\":[]},{\"level\":3,\"title\":\"environment\",\"slug\":\"environment\",\"link\":\"#environment\",\"children\":[]},{\"level\":3,\"title\":\"tools\",\"slug\":\"tools\",\"link\":\"#tools\",\"children\":[]},{\"level\":3,\"title\":\"input\",\"slug\":\"input\",\"link\":\"#input\",\"children\":[]},{\"level\":3,\"title\":\"parameters\",\"slug\":\"parameters\",\"link\":\"#parameters\",\"children\":[]},{\"level\":3,\"title\":\"options\",\"slug\":\"options\",\"link\":\"#options\",\"children\":[]}]}],\"readingTime\":{\"minutes\":16.55,\"words\":4964},\"filePathRelative\":\"automation/jenkins/【Jenkins】Pipeline流水线语法解析全集 -- 声明式流水线 - 副本.md\",\"localizedDate\":\"2024年12月24日\",\"copyright\":{\"author\":\"LiucyLinux(LiucyLinux.cn)\",\"license\":\"MIT\"},\"autoDesc\":true}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

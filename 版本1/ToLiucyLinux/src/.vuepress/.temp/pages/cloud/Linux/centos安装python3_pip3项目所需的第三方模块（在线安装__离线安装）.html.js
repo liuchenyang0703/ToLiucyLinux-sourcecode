@@ -1,0 +1,14 @@
+export const data = JSON.parse("{\"key\":\"v-853ad846\",\"path\":\"/cloud/Linux/centos%E5%AE%89%E8%A3%85python3_pip3%E9%A1%B9%E7%9B%AE%E6%89%80%E9%9C%80%E7%9A%84%E7%AC%AC%E4%B8%89%E6%96%B9%E6%A8%A1%E5%9D%97%EF%BC%88%E5%9C%A8%E7%BA%BF%E5%AE%89%E8%A3%85__%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85%EF%BC%89.html\",\"title\":\"前言\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"[toc] &emsp;&emsp;因为项目要求，和一般部署服务的时候需要一些python的模块，然后并没有外网，所以，只好下载一些需要的python模块；在这之前查阅了很多文章，但都是直接安装的，找这种离线包安装的特别困难，所以，好不容易找到了几篇，我就把这个写成一篇文章，供大家观看，感谢！ 安装python3和pip3 详细的安装教程请参考链接：L...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"http://liuchenyang.top/cloud/Linux/centos%E5%AE%89%E8%A3%85python3_pip3%E9%A1%B9%E7%9B%AE%E6%89%80%E9%9C%80%E7%9A%84%E7%AC%AC%E4%B8%89%E6%96%B9%E6%A8%A1%E5%9D%97%EF%BC%88%E5%9C%A8%E7%BA%BF%E5%AE%89%E8%A3%85__%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85%EF%BC%89.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"ToLiucyLinux\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"前言\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"[toc] &emsp;&emsp;因为项目要求，和一般部署服务的时候需要一些python的模块，然后并没有外网，所以，只好下载一些需要的python模块；在这之前查阅了很多文章，但都是直接安装的，找这种离线包安装的特别困难，所以，好不容易找到了几篇，我就把这个写成一篇文章，供大家观看，感谢！ 安装python3和pip3 详细的安装教程请参考链接：L...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"article:author\",\"content\":\"Liucy\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"前言\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":null,\\\"author\\\":[{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"Liucy\\\",\\\"url\\\":\\\"http://liuchenyang.top\\\"}]}\"]]},\"headers\":[{\"level\":2,\"title\":\"安装python3和pip3\",\"slug\":\"安装python3和pip3\",\"link\":\"#安装python3和pip3\",\"children\":[]},{\"level\":2,\"title\":\"升级/更新pip3\",\"slug\":\"升级-更新pip3\",\"link\":\"#升级-更新pip3\",\"children\":[]},{\"level\":2,\"title\":\"安装项目所需的模块\",\"slug\":\"安装项目所需的模块\",\"link\":\"#安装项目所需的模块\",\"children\":[{\"level\":3,\"title\":\"在线安装所需模块\",\"slug\":\"在线安装所需模块\",\"link\":\"#在线安装所需模块\",\"children\":[]},{\"level\":3,\"title\":\"离线安装/下载所需模块和离线包\",\"slug\":\"离线安装-下载所需模块和离线包\",\"link\":\"#离线安装-下载所需模块和离线包\",\"children\":[]}]},{\"level\":2,\"title\":\"相关文章\",\"slug\":\"相关文章\",\"link\":\"#相关文章\",\"children\":[]}],\"readingTime\":{\"minutes\":2.71,\"words\":814},\"filePathRelative\":\"cloud/Linux/centos安装python3_pip3项目所需的第三方模块（在线安装&&离线安装）.md\",\"copyright\":{\"author\":\"LiucyLinux(LiucyLinux.cn)\",\"license\":\"MIT\"},\"autoDesc\":true}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}
