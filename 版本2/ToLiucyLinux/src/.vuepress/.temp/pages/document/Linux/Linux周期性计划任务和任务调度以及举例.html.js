@@ -1,0 +1,16 @@
+import comp from "E:/vscode/项目/ToLiucyLinux-new/src/.vuepress/.temp/pages/document/Linux/Linux周期性计划任务和任务调度以及举例.html.vue"
+const data = JSON.parse("{\"path\":\"/document/Linux/Linux%E5%91%A8%E6%9C%9F%E6%80%A7%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1%E5%92%8C%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E4%BB%A5%E5%8F%8A%E4%B8%BE%E4%BE%8B.html\",\"title\":\"Linux周期性计划任务和任务调度以及举例\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Linux周期性计划任务和任务调度以及举例\",\"icon\":\"circle-info\",\"order\":1,\"category\":[\"Linux\"],\"tag\":[\"Linux\",\"运维\"],\"pageview\":false,\"date\":\"2024-12-20T00:00:00.000Z\",\"comment\":false,\"breadcrumb\":false,\"description\":\"一次性计划任务：at 启动：systemctl start atd 周期性计划任务：crond 设置永久的周期性计划任务：vim /etc/crontab 进入vim /etc/crontab 编辑，保存退出即可； 重点： 分 时 日 月 周 用户 要执行的命令 * * * * * root 命令 0 0 * * 3 root rm -rf /var/...\",\"gitInclude\":[],\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"http://liuchenyang.top/ToLiucyLinux/document/Linux/Linux%E5%91%A8%E6%9C%9F%E6%80%A7%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1%E5%92%8C%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E4%BB%A5%E5%8F%8A%E4%B8%BE%E4%BE%8B.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"ToLiucyLinux\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Linux周期性计划任务和任务调度以及举例\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"一次性计划任务：at 启动：systemctl start atd 周期性计划任务：crond 设置永久的周期性计划任务：vim /etc/crontab 进入vim /etc/crontab 编辑，保存退出即可； 重点： 分 时 日 月 周 用户 要执行的命令 * * * * * root 命令 0 0 * * 3 root rm -rf /var/...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"article:author\",\"content\":\"Liucy\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"Linux\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"运维\"}],[\"meta\",{\"property\":\"article:published_time\",\"content\":\"2024-12-20T00:00:00.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Linux周期性计划任务和任务调度以及举例\\\",\\\"image\\\":[\\\"\\\"],\\\"datePublished\\\":\\\"2024-12-20T00:00:00.000Z\\\",\\\"dateModified\\\":null,\\\"author\\\":[{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"Liucy\\\",\\\"url\\\":\\\"http://liuchenyang.top\\\"}]}\"]]},\"headers\":[{\"level\":2,\"title\":\"一次性计划任务：at\",\"slug\":\"一次性计划任务-at\",\"link\":\"#一次性计划任务-at\",\"children\":[]},{\"level\":2,\"title\":\"周期性计划任务：crond\",\"slug\":\"周期性计划任务-crond\",\"link\":\"#周期性计划任务-crond\",\"children\":[]},{\"level\":2,\"title\":\"重点：\",\"slug\":\"重点\",\"link\":\"#重点\",\"children\":[]},{\"level\":2,\"title\":\"任务调度：\",\"slug\":\"任务调度\",\"link\":\"#任务调度\",\"children\":[]},{\"level\":2,\"title\":\"推荐：周期性计划任务时间生成地址★\",\"slug\":\"推荐-周期性计划任务时间生成地址★\",\"link\":\"#推荐-周期性计划任务时间生成地址★\",\"children\":[]}],\"readingTime\":{\"minutes\":1.81,\"words\":542},\"filePathRelative\":\"document/Linux/Linux周期性计划任务和任务调度以及举例.md\",\"localizedDate\":\"2024年12月20日\",\"autoDesc\":true}")
+export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}
