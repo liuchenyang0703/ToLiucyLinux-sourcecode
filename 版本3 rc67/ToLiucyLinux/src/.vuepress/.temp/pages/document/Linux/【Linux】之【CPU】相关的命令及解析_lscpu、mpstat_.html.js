@@ -1,0 +1,16 @@
+import comp from "D:/JAVA项目/new_cs/rc67/src/.vuepress/.temp/pages/document/Linux/【Linux】之【CPU】相关的命令及解析_lscpu、mpstat_.html.vue"
+const data = JSON.parse("{\"path\":\"/document/Linux/%E3%80%90Linux%E3%80%91%E4%B9%8B%E3%80%90CPU%E3%80%91%E7%9B%B8%E5%85%B3%E7%9A%84%E5%91%BD%E4%BB%A4%E5%8F%8A%E8%A7%A3%E6%9E%90_lscpu%E3%80%81mpstat_.html\",\"title\":\"【Linux】之【CPU】相关的命令及解析[lscpu、mpstat]\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"【Linux】之【CPU】相关的命令及解析[lscpu、mpstat]\",\"icon\":\"circle-info\",\"order\":1,\"category\":[\"Linux\"],\"tag\":[\"Linux\",\"cpu\",\"运维\"],\"pageview\":false,\"date\":\"2024-12-18T00:00:00.000Z\",\"comment\":false,\"breadcrumb\":false,\"gitInclude\":[],\"description\":\"一、lscpu – 显示CPU架构的有关信息 lscpu命令从sysfs和/proc/cpuinfo收集cpu体系结构信息，命令的输出比较易读，命令输出的信息包含cpu数量，线程，核数，套接字，缓存等。 二、mpstat – 显示变化的CPU数据 mpstat命令可以显示随着时间变化的CPU数据，方便找出CPU使用率与时间的关系。这个命令包含在工具集s...\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"http://liuchenyang.top/ToLiucyLinux/document/Linux/%E3%80%90Linux%E3%80%91%E4%B9%8B%E3%80%90CPU%E3%80%91%E7%9B%B8%E5%85%B3%E7%9A%84%E5%91%BD%E4%BB%A4%E5%8F%8A%E8%A7%A3%E6%9E%90_lscpu%E3%80%81mpstat_.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"ToLiucyLinux\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"【Linux】之【CPU】相关的命令及解析[lscpu、mpstat]\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"一、lscpu – 显示CPU架构的有关信息 lscpu命令从sysfs和/proc/cpuinfo收集cpu体系结构信息，命令的输出比较易读，命令输出的信息包含cpu数量，线程，核数，套接字，缓存等。 二、mpstat – 显示变化的CPU数据 mpstat命令可以显示随着时间变化的CPU数据，方便找出CPU使用率与时间的关系。这个命令包含在工具集s...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"Linux\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"cpu\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"运维\"}],[\"meta\",{\"property\":\"article:published_time\",\"content\":\"2024-12-18T00:00:00.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"【Linux】之【CPU】相关的命令及解析[lscpu、mpstat]\\\",\\\"image\\\":[\\\"\\\"],\\\"datePublished\\\":\\\"2024-12-18T00:00:00.000Z\\\",\\\"dateModified\\\":null,\\\"author\\\":[{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"Liucy\\\",\\\"url\\\":\\\"http://liuchenyang.top\\\"}]}\"]]},\"headers\":[{\"level\":2,\"title\":\"一、lscpu  – 显示CPU架构的有关信息\",\"slug\":\"一、lscpu-–-显示cpu架构的有关信息\",\"link\":\"#一、lscpu-–-显示cpu架构的有关信息\",\"children\":[]},{\"level\":2,\"title\":\"二、mpstat – 显示变化的CPU数据\",\"slug\":\"二、mpstat-–-显示变化的cpu数据\",\"link\":\"#二、mpstat-–-显示变化的cpu数据\",\"children\":[]},{\"level\":2,\"title\":\"总结\",\"slug\":\"总结\",\"link\":\"#总结\",\"children\":[]},{\"level\":2,\"title\":\"相关文章\",\"slug\":\"相关文章\",\"link\":\"#相关文章\",\"children\":[]}],\"readingTime\":{\"minutes\":3.51,\"words\":1054},\"filePathRelative\":\"document/Linux/【Linux】之【CPU】相关的命令及解析[lscpu、mpstat].md\",\"localizedDate\":\"2024年12月18日\",\"autoDesc\":true}")
+export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}
