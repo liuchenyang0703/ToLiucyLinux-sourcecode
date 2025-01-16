@@ -42,4 +42,16 @@
 "vuepress-theme-hope": "2.0.0-rc.67"
 ```
 
+# 版本4 2025-01-16 rc68
+> 2025-01-16第四版提交：升级了VuePress Theme Hope版本到rc68<br>
+> 问题：<br>
+> 1、全屏展示字样显示位置错误
 
+```bash
+"@vuepress/bundler-vite": "2.0.0-rc.19",
+"@vuepress/plugin-search": "2.0.0-rc.70",
+"sass-embedded": "^1.83.3",
+"vue": "^3.5.13",
+"vuepress": "2.0.0-rc.19",
+"vuepress-theme-hope": "2.0.0-rc.68"
+```
