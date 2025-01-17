@@ -1,0 +1,8 @@
+# 提交暂缓区
+git add .
+
+# 提交到本地仓库
+git commit -m "提交内容"
+
+# 推送到远程仓库
+git push  https://github.com/liuchenyang0703/ToLiucyLinux.git master:blog_source
