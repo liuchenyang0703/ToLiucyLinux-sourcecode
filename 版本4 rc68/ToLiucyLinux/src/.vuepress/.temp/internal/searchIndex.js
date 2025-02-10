@@ -22,6 +22,13 @@ export const SEARCH_INDEX = [
     "extraFields": []
   },
   {
+    "title": "友情链接",
+    "headers": [],
+    "path": "/friendship.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "关于作者",
     "headers": [
       {
@@ -33,23 +40,45 @@ export const SEARCH_INDEX = [
       },
       {
         "level": 2,
-        "title": "个人荣誉",
-        "slug": "个人荣誉",
-        "link": "#个人荣誉",
+        "title": "✨ 我的技术栈",
+        "slug": "✨-我的技术栈",
+        "link": "#✨-我的技术栈",
         "children": []
       },
       {
         "level": 2,
-        "title": "个人贡献",
-        "slug": "个人贡献",
-        "link": "#个人贡献",
+        "title": "✨ 常用的操作系统",
+        "slug": "✨-常用的操作系统",
+        "link": "#✨-常用的操作系统",
+        "children": [
+          {
+            "level": 3,
+            "title": "我的成就 🏅",
+            "slug": "我的成就-🏅",
+            "link": "#我的成就-🏅",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "个人荣誉 🏅",
+        "slug": "个人荣誉-🏅",
+        "link": "#个人荣誉-🏅",
         "children": []
       },
       {
         "level": 2,
-        "title": "个人邮箱",
-        "slug": "个人邮箱",
-        "link": "#个人邮箱",
+        "title": "个人贡献 🏅",
+        "slug": "个人贡献-🏅",
+        "link": "#个人贡献-🏅",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "交个朋友 👬🏻",
+        "slug": "交个朋友-👬🏻",
+        "link": "#交个朋友-👬🏻",
         "children": []
       },
       {
@@ -352,6 +381,48 @@ export const SEARCH_INDEX = [
         "title": "2025-01-14:",
         "slug": "_2025-01-14",
         "link": "#_2025-01-14",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2025-01-20:",
+        "slug": "_2025-01-20",
+        "link": "#_2025-01-20",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2025-01-22:",
+        "slug": "_2025-01-22",
+        "link": "#_2025-01-22",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2025-01-23:",
+        "slug": "_2025-01-23",
+        "link": "#_2025-01-23",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2025-02-05:",
+        "slug": "_2025-02-05",
+        "link": "#_2025-02-05",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2025-02-06:",
+        "slug": "_2025-02-06",
+        "link": "#_2025-02-06",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2025-02-07:",
+        "slug": "_2025-02-07",
+        "link": "#_2025-02-07",
         "children": []
       }
     ],
@@ -11080,6 +11151,77 @@ export const SEARCH_INDEX = [
     "extraFields": []
   },
   {
+    "title": "Linux生成自签证书【Nginx】",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1. 安装 OpenSSL",
+        "slug": "_1-安装-openssl",
+        "link": "#_1-安装-openssl",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2. 生成私钥",
+        "slug": "_2-生成私钥",
+        "link": "#_2-生成私钥",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3. 生成证书签名请求 (CSR)",
+        "slug": "_3-生成证书签名请求-csr",
+        "link": "#_3-生成证书签名请求-csr",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4. 生成自签证书",
+        "slug": "_4-生成自签证书",
+        "link": "#_4-生成自签证书",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5. 验证证书",
+        "slug": "_5-验证证书",
+        "link": "#_5-验证证书",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "6. 移除私钥密码（可选）",
+        "slug": "_6-移除私钥密码-可选",
+        "link": "#_6-移除私钥密码-可选",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "7. 使用证书",
+        "slug": "_7-使用证书",
+        "link": "#_7-使用证书",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "8. 页面访问展示",
+        "slug": "_8-页面访问展示",
+        "link": "#_8-页面访问展示",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "9. 总结",
+        "slug": "_9-总结",
+        "link": "#_9-总结",
+        "children": []
+      }
+    ],
+    "path": "/document/Linux/Linux%E7%94%9F%E6%88%90%E8%87%AA%E7%AD%BE%E8%AF%81%E4%B9%A6%E3%80%90Nginx%E3%80%91.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "Linux磁盘管理",
     "headers": [
       {
@@ -20215,6 +20357,77 @@ export const SEARCH_INDEX = [
       }
     ],
     "path": "/document/network/Linux%E7%BD%91%E7%BB%9C%E7%AE%A1%E7%90%86%E4%B9%8B%E7%BD%91%E5%8D%A1%E3%80%81%E7%BD%91%E7%BB%9C%E6%8E%A5%E5%8F%A3%E5%BC%80%E5%85%B3%E8%AE%BE%E7%BD%AE.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Linux生成自签证书【Nginx】",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1. 安装 OpenSSL",
+        "slug": "_1-安装-openssl",
+        "link": "#_1-安装-openssl",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2. 生成私钥",
+        "slug": "_2-生成私钥",
+        "link": "#_2-生成私钥",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3. 生成证书签名请求 (CSR)",
+        "slug": "_3-生成证书签名请求-csr",
+        "link": "#_3-生成证书签名请求-csr",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4. 生成自签证书",
+        "slug": "_4-生成自签证书",
+        "link": "#_4-生成自签证书",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5. 验证证书",
+        "slug": "_5-验证证书",
+        "link": "#_5-验证证书",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "6. 移除私钥密码（可选）",
+        "slug": "_6-移除私钥密码-可选",
+        "link": "#_6-移除私钥密码-可选",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "7. 使用证书",
+        "slug": "_7-使用证书",
+        "link": "#_7-使用证书",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "8. 页面访问展示",
+        "slug": "_8-页面访问展示",
+        "link": "#_8-页面访问展示",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "9. 总结",
+        "slug": "_9-总结",
+        "link": "#_9-总结",
+        "children": []
+      }
+    ],
+    "path": "/document/Nginx/Linux%E7%94%9F%E6%88%90%E8%87%AA%E7%AD%BE%E8%AF%81%E4%B9%A6%E3%80%90Nginx%E3%80%91.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -34967,6 +35180,13 @@ export const SEARCH_INDEX = [
     "extraFields": []
   },
   {
+    "title": "Nginx 分类",
+    "headers": [],
+    "path": "/category/nginx/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "网络 分类",
     "headers": [],
     "path": "/category/%E7%BD%91%E7%BB%9C/",
@@ -35005,13 +35225,6 @@ export const SEARCH_INDEX = [
     "title": "虚拟化 分类",
     "headers": [],
     "path": "/category/%E8%99%9A%E6%8B%9F%E5%8C%96/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Nginx 分类",
-    "headers": [],
-    "path": "/category/nginx/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -35247,6 +35460,27 @@ export const SEARCH_INDEX = [
     "extraFields": []
   },
   {
+    "title": "标签: Nginx",
+    "headers": [],
+    "path": "/tag/nginx/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "标签: ssl",
+    "headers": [],
+    "path": "/tag/ssl/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "标签: 自签证书",
+    "headers": [],
+    "path": "/tag/%E8%87%AA%E7%AD%BE%E8%AF%81%E4%B9%A6/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "标签: 磁盘",
     "headers": [],
     "path": "/tag/%E7%A3%81%E7%9B%98/",
@@ -35471,13 +35705,6 @@ export const SEARCH_INDEX = [
     "extraFields": []
   },
   {
-    "title": "标签: Nginx",
-    "headers": [],
-    "path": "/tag/nginx/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "标签: 谷歌",
     "headers": [],
     "path": "/tag/%E8%B0%B7%E6%AD%8C/",
@@ -35555,16 +35782,3 @@ export const SEARCH_INDEX = [
     "extraFields": []
   }
 ]
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updateSearchIndex) {
-    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ searchIndex }) => {
-    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
-  })
-}
